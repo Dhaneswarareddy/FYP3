@@ -1,0 +1,17 @@
+{
+ "frozen_arm": {
+  "name": "stain_p99",
+  "scale": 1.0,
+  "g_h": 0.2545270680571192,
+  "g_d": 0.5044797263953001
+ },
+ "frozen_sha_ok": true,
+ "n_protected": 108,
+ "n_h1_fit": 1500,
+ "n_h1_selection": 2000,
+ "n_reliability": 4593,
+ "pools_disjoint": true,
+ "test_guard_active": true,
+ "genuine_wsi_ids_available": false,
+ "go": true
+}

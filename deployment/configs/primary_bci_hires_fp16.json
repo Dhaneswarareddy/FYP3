@@ -1,0 +1,24 @@
+{
+ "mode": "primary",
+ "model_dir": "primary_bci_hires_fp16",
+ "run": "EfficientNetV2B0__ce__hires",
+ "precision": "fp16",
+ "model_sha256": "31e9c888304ceb34e88c4f342cf7fa66d0de18371eca4f659ffadd39fd0dc5a9",
+ "source_size": 512,
+ "input_size": 448,
+ "labels": [
+  "0",
+  "1+",
+  "2+",
+  "3+"
+ ],
+ "stain_calibration": null,
+ "temperature": null,
+ "intended_input": "BCI-like HER2 IHC tiles, 1024 px, about 0.46 um/px",
+ "warnings": [
+  "Research software. Not clinically validated. Do not use for diagnosis or treatment decisions.",
+  "Scores individual tiles only. There is no slide-level or patient-level score.",
+  "Performance applies to BCI-like tiles only. On HER2-IHC-40x this model scored 0.435 accuracy and very low 1+ and 2+ recall.",
+  "Do not apply stain calibration to this model: it collapses."
+ ]
+}

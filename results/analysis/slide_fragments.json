@@ -1,0 +1,36 @@
+{
+  "n_tiles": 4873,
+  "candidate_pairs": 9746,
+  "accepted_links": 2763,
+  "accepted_links_same_label": 0.9996380745566413,
+  "rejected_best_matches_same_label": 0.6008878705427466,
+  "random_pair_same_label": 0.32707061433044515,
+  "tiles_in_fragments": 3228,
+  "n_fragments": 691,
+  "largest_fragment": 99,
+  "fragment_size_quantiles": {
+    "0.5": 2.0,
+    "0.9": 7.0,
+    "1.0": 99.0
+  },
+  "fragments_label_pure": 0.9985528219971056,
+  "train_vs_val": {
+    "fragments_shared": 220,
+    "tiles_of_b_in_shared": 347,
+    "tiles_of_b": 585
+  },
+  "train_vs_test": {
+    "fragments_shared": 324,
+    "tiles_of_b_in_shared": 603,
+    "tiles_of_b": 977
+  },
+  "official_train_vs_test": {
+    "fragments_shared": 338,
+    "tiles_of_b_in_shared": 619,
+    "tiles_of_b": 977
+  },
+  "params": {
+    "ratio": 0.6,
+    "dist_factor": 3.0
+  }
+}

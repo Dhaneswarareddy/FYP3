@@ -1,0 +1,18 @@
+{
+ "genuine_wsi_ids": false,
+ "evidence": [
+  "archives hold PNG tiles only, no CSV or metadata",
+  "filenames are her2-<score>-score_<split>_<number>.png, numbered per score",
+  "the Zenodo record and the authors' repository give no patch-to-slide mapping",
+  "the WSI/ and ROI/ folders named in the record are not in the local archives"
+ ],
+ "only_genuine_wsi_boundary": "86 development WSIs vs 21 test WSIs, already used once by HARMONISE-1",
+ "per_slide_analysis_possible": false,
+ "index_block_icc": {
+  "od_mean": -0.2680482883126315,
+  "blue_minus_red_od": -0.3300545518687528,
+  "od_p95": -0.18627836105940326
+ },
+ "n_index_blocks": 39,
+ "surrogate_allowed": false
+}

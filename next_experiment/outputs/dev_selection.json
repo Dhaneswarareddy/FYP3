@@ -1,0 +1,13 @@
+{
+ "baseline": 0.2955810975791323,
+ "best": 0.510353973400556,
+ "selected": "stain_p99",
+ "metric": "balanced_accuracy",
+ "n_dev": 2000,
+ "arm": {
+  "name": "stain_p99",
+  "scale": 1.0,
+  "g_h": 0.2545270680571192,
+  "g_d": 0.5044797263953001
+ }
+}

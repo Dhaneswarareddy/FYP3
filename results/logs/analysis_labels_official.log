@@ -1,0 +1,60 @@
+Otsu background threshold (train): 201.1
+                 run split   n  accuracy  n_with_refined  refined_disagree_rate  acc_clean  n_clean  acc_noisy_vs_filename  n_noisy  acc_noisy_vs_refined  acc_vs_refined_all  errors_with_refined  share_errors_matching_refined  share_errors_on_noisy_tiles  macro_f1_clean
+     MobileNetV2__ce   val 585     0.926             428                  0.152      0.970      363                  0.938       65                 0.062               0.832                   15                          0.267                        0.267           0.977
+     MobileNetV2__ce  test 977     0.910             693                  0.238      0.970      528                  0.933      165                 0.055               0.752                   27                          0.333                        0.407           0.978
+MobileNetV3Small__ce   val 585     0.899             428                  0.152      0.964      363                  0.908       65                 0.092               0.832                   19                          0.316                        0.316           0.972
+MobileNetV3Small__ce  test 977     0.902             693                  0.238      0.958      528                  0.964      165                 0.036               0.739                   28                          0.214                        0.214           0.958
+                 run split   scan   n  accuracy  macro_f1   qwk  recall_0  recall_1  recall_2  recall_3
+     MobileNetV2__ce   val bright 265     0.940     0.940 0.932      0.95     0.949     0.929     0.945
+     MobileNetV2__ce   val   grey 320     0.916     0.930 0.891      1.00     0.917     0.923     0.897
+     MobileNetV2__ce  test bright 448     0.902     0.886 0.837      0.90     0.864     0.910     0.947
+     MobileNetV2__ce  test   grey 528     0.917     0.917 0.866      1.00     0.942     0.919     0.896
+MobileNetV3Small__ce   val bright 265     0.883     0.840 0.812      0.55     0.833     0.938     0.964
+MobileNetV3Small__ce   val   grey 320     0.912     0.920 0.849      1.00     0.817     0.958     0.897
+MobileNetV3Small__ce  test bright 448     0.888     0.873 0.848      0.80     0.818     0.929     0.934
+MobileNetV3Small__ce  test   grey 528     0.913     0.927 0.873      1.00     0.903     0.932     0.890
+                 run  label   scan   n  accuracy  mean_bias
+     MobileNetV2__ce      0 bright  50     0.920      0.261
+     MobileNetV2__ce      0   grey  18     1.000      0.002
+     MobileNetV2__ce      1 bright 210     0.895      0.111
+     MobileNetV2__ce      1   grey 163     0.933      0.198
+     MobileNetV2__ce      2 bright 322     0.916     -0.151
+     MobileNetV2__ce      2   grey 378     0.921     -0.008
+     MobileNetV2__ce      3 bright 131     0.947     -0.196
+     MobileNetV2__ce      3   grey 289     0.896     -0.179
+MobileNetV3Small__ce      0 bright  50     0.700      0.529
+MobileNetV3Small__ce      0   grey  18     1.000      0.006
+MobileNetV3Small__ce      1 bright 210     0.824      0.198
+MobileNetV3Small__ce      1   grey 163     0.871      0.229
+MobileNetV3Small__ce      2 bright 322     0.932     -0.097
+MobileNetV3Small__ce      2   grey 378     0.942      0.004
+MobileNetV3Small__ce      3 bright 131     0.947     -0.123
+MobileNetV3Small__ce      3   grey 289     0.893     -0.176
+                 run       feature   coef  ci_lo  ci_hi    n
+     MobileNetV2__ce     dabc_mean  0.074  0.053  0.099 1562
+     MobileNetV2__ce bg_brightness -0.048 -0.068 -0.030 1562
+     MobileNetV2__ce     hemc_mean  0.004 -0.016  0.024 1562
+     MobileNetV2__ce   tissue_frac -0.046 -0.083 -0.011 1562
+     MobileNetV2__ce     sharpness  0.048  0.008  0.089 1562
+MobileNetV3Small__ce     dabc_mean  0.080  0.057  0.107 1562
+MobileNetV3Small__ce bg_brightness -0.015 -0.036  0.006 1562
+MobileNetV3Small__ce     hemc_mean  0.019 -0.005  0.041 1562
+MobileNetV3Small__ce   tissue_frac -0.031 -0.077  0.016 1562
+MobileNetV3Small__ce     sharpness  0.018 -0.036  0.071 1562
+                 run  all_accuracy  no_dup_accuracy  all_macro_f1  no_dup_macro_f1
+     MobileNetV2__ce        0.9099           0.9085        0.8891           0.8882
+MobileNetV3Small__ce        0.9017           0.9001        0.8853           0.8822
+dataset           target  spearman_dab  spearman_dabc  spearman_bg  spearman_sharp  r2_DAB, raw OD  r2_DAB, corrected  r2_haematoxylin  r2_mean colour  r2_background  r2_texture  r2_all
+   FYP2       true label         0.875          0.838        0.504           0.413           0.799              0.786            0.319           0.755          0.550       0.683   0.884
+   FYP2         ResNet50         0.840          0.802        0.549           0.348           0.799              0.785            0.319           0.756          0.551       0.683   0.885
+   FYP2      DenseNet121         0.872          0.833        0.552           0.368           0.802              0.787            0.320           0.760          0.556       0.685   0.886
+   FYP2     ConvNeXtTiny         0.864          0.825        0.530           0.383           0.800              0.786            0.320           0.756          0.551       0.683   0.885
+   FYP2   EfficientNetB0         0.878          0.837        0.505           0.380           0.801              0.787            0.320           0.759          0.555       0.685   0.885
+   FYP2 EfficientNetV2B0         0.884          0.849        0.515           0.395           0.810              0.794            0.322           0.753          0.549       0.688   0.887
+   FYP2     NASNetMobile         0.860          0.824        0.503           0.411           0.799              0.786            0.320           0.756          0.551       0.683   0.885
+   FYP2      MobileNetV2         0.861          0.822        0.523           0.375           0.800              0.787            0.320           0.755          0.548       0.683   0.889
+   FYP2 MobileNetV3Large         0.862          0.825        0.536           0.371           0.800              0.785            0.317           0.756          0.549       0.683   0.886
+   FYP2 MobileNetV3Small         0.868          0.833        0.555           0.356           0.802              0.788            0.320           0.755          0.550       0.684   0.885
+    BCI       true label         0.445          0.491       -0.217           0.264           0.252              0.263            0.068           0.176          0.063       0.212   0.312
+    BCI      MobileNetV2         0.554          0.577       -0.305           0.295           0.329              0.334            0.090           0.235          0.082       0.292   0.412
+    BCI MobileNetV3Small         0.533          0.572       -0.276           0.288           0.301              0.315            0.079           0.204          0.066       0.266   0.387

@@ -1,0 +1,26 @@
+=== ConvNeXtTiny / ce  params=27,823,204  batch=16 ===
+  [head] ep   1 loss 1.2377 | val loss 0.9278 acc 0.6025 qwk 0.4247 f1 0.5012 | lr 1.00e-03 124s *
+  [head] ep   2 loss 0.9527 | val loss 0.8982 acc 0.6121 qwk 0.4275 f1 0.4904 | lr 1.00e-03 122s *
+  [head] ep   3 loss 0.8657 | val loss 0.8408 acc 0.6492 qwk 0.4833 f1 0.5492 | lr 1.00e-03 119s *
+  [head] ep   4 loss 0.8368 | val loss 0.8479 acc 0.6396 qwk 0.4621 f1 0.5338 | lr 1.00e-03 120s
+  [head] ep   5 loss 0.8089 | val loss 0.8113 acc 0.6602 qwk 0.4915 f1 0.5663 | lr 1.00e-03 128s *
+  [finetune] ep   6 loss 0.7312 | val loss 0.7494 acc 0.6644 qwk 0.5051 f1 0.5600 | lr 5.02e-05 374s *
+  [finetune] ep   7 loss 0.5574 | val loss 0.6376 acc 0.7703 qwk 0.6340 f1 0.6870 | lr 1.00e-04 386s *
+  [finetune] ep   8 loss 0.4390 | val loss 0.5494 acc 0.7662 qwk 0.6247 f1 0.7228 | lr 9.98e-05 368s
+  [finetune] ep   9 loss 0.3330 | val loss 0.4052 acc 0.8446 qwk 0.7655 f1 0.8351 | lr 9.93e-05 365s *
+  [finetune] ep  10 loss 0.2501 | val loss 0.3622 acc 0.8624 qwk 0.7491 f1 0.8374 | lr 9.85e-05 370s
+  [finetune] ep  11 loss 0.2222 | val loss 0.4109 acc 0.8308 qwk 0.7423 f1 0.8178 | lr 9.73e-05 375s
+  [finetune] ep  12 loss 0.2080 | val loss 0.3344 acc 0.8693 qwk 0.7840 f1 0.8462 | lr 9.58e-05 353s *
+  [finetune] ep  13 loss 0.1403 | val loss 0.3060 acc 0.9023 qwk 0.8436 f1 0.8921 | lr 9.40e-05 355s *
+  [finetune] ep  14 loss 0.1362 | val loss 0.3032 acc 0.8968 qwk 0.8118 f1 0.8876 | lr 9.19e-05 380s
+  [finetune] ep  15 loss 0.1111 | val loss 0.2761 acc 0.8845 qwk 0.8024 f1 0.8720 | lr 8.95e-05 369s
+  [finetune] ep  16 loss 0.0946 | val loss 0.3872 acc 0.8845 qwk 0.8216 f1 0.8717 | lr 8.68e-05 377s
+  [finetune] ep  17 loss 0.0868 | val loss 0.3013 acc 0.8955 qwk 0.8168 f1 0.8762 | lr 8.39e-05 377s
+  [finetune] ep  18 loss 0.0699 | val loss 0.3846 acc 0.8748 qwk 0.8080 f1 0.8692 | lr 8.07e-05 371s
+  [finetune] ep  19 loss 0.0668 | val loss 0.3568 acc 0.8803 qwk 0.7889 f1 0.8495 | lr 7.73e-05 370s
+  [finetune] ep  20 loss 0.0652 | val loss 0.3246 acc 0.8968 qwk 0.8109 f1 0.8793 | lr 7.38e-05 377s
+  [finetune] ep  21 loss 0.0480 | val loss 0.3131 acc 0.8955 qwk 0.8361 f1 0.8974 | lr 7.01e-05 374s
+  [finetune] ep  22 loss 0.0382 | val loss 0.3007 acc 0.8941 qwk 0.8196 f1 0.8962 | lr 6.62e-05 378s
+  [finetune] ep  23 loss 0.0499 | val loss 0.3309 acc 0.8955 qwk 0.8312 f1 0.8988 | lr 6.23e-05 521s
+  early stop (no val QWK improvement for 10 epochs)
+DONE ConvNeXtTiny/ce: best epoch 13  val qwk 0.8436 acc 0.9023 | test qwk 0.8984 acc 0.9261  (124.3 min)

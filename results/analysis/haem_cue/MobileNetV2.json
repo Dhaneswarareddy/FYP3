@@ -1,0 +1,29 @@
+{
+ "arch": "MobileNetV2",
+ "A": {
+  "scale": 0.2,
+  "n": 270,
+  "share_1plus_before": 0.0,
+  "share_1plus_after": 0.2518518518518518
+ },
+ "B": {
+  "scale": 5.0,
+  "n": 90,
+  "share_1plus_before": 1.0,
+  "share_1plus_after": 0.0
+ },
+ "C": {
+  "scale": 5.0,
+  "n": 758,
+  "share_1plus_before": 0.7968337730870713,
+  "share_1plus_after": 0.17678100263852242,
+  "balanced_accuracy_before": 0.39302789117510073,
+  "balanced_accuracy_after": 0.35536422765244813,
+  "predicted_share_after": [
+   363,
+   134,
+   208,
+   53
+  ]
+ }
+}

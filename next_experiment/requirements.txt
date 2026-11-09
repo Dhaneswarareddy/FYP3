@@ -1,0 +1,11 @@
+# No new dependencies: HARMONISE-1 runs in the existing project environment.
+# Versions as installed in /Users/dhaneswarareddy/Downloads/Final_Year_Project/Codes/Project (Python 3.11).
+tensorflow-macos==2.15.0
+tensorflow-metal==1.1.0
+keras==2.15.0
+numpy==1.26.4
+pandas==3.0.6
+scikit-learn==1.9.1
+pillow==12.3.0
+opencv-python==4.9.0.80
+ImageHash==4.3.2

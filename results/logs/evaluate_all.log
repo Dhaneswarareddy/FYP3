@@ -1,0 +1,28 @@
+EfficientNetV2B0__ce__hires: train acc 0.9994  val 0.9505  test 0.9749
+EfficientNetV2B0__corn: train acc 0.9545  val 0.8624  test 0.9063
+MobileNetV2__ce: train acc 0.9619  val 0.8569  test 0.9301
+MobileNetV3Large__ce: train acc 0.9666  val 0.8707  test 0.9077
+MobileNetV3Large__corn: train acc 0.9932  val 0.8941  test 0.9367
+MobileNetV3Small__ce: train acc 0.9584  val 0.8542  test 0.9129
+MobileNetV3Small__ce__cw: train acc 0.9419  val 0.8542  test 0.9063
+MobileNetV3Small__ce__hires: train acc 0.9298  val 0.8982  test 0.9077
+MobileNetV3Small__ce__ls: train acc 0.9531  val 0.8638  test 0.9050
+NASNetMobile__ce: train acc 0.9764  val 0.8845  test 0.9208
+ResNet50__ce: train acc 0.9885  val 0.9023  test 0.9485
+                        run  train_acc  val_acc  test_acc  gap_train_test_acc  val_minus_test_acc  nll_gap verdict verdict_noise_aware
+           ConvNeXtTiny__ce     0.9782   0.9023    0.9261              0.0520             -0.0238   0.1171 overfit             overfit
+            DenseNet121__ce     0.9746   0.9078    0.9420              0.0327             -0.0341   0.0709 overfit                mild
+          DenseNet121__corn     0.9566   0.8803    0.9142              0.0424             -0.0339   0.0782 overfit                mild
+         EfficientNetB0__ce     0.9935   0.8913    0.9327              0.0608             -0.0414   0.1960 overfit             overfit
+       EfficientNetV2B0__ce     0.9920   0.8955    0.9261              0.0659             -0.0307   0.1872 overfit             overfit
+EfficientNetV2B0__ce__hires     0.9994   0.9505    0.9749              0.0245             -0.0245   0.0880 overfit                mild
+     EfficientNetV2B0__corn     0.9545   0.8624    0.9063              0.0482             -0.0439   0.1091 overfit             overfit
+            MobileNetV2__ce     0.9619   0.8569    0.9301              0.0318             -0.0731   0.0606 overfit                mild
+       MobileNetV3Large__ce     0.9666   0.8707    0.9077              0.0590             -0.0370   0.1123 overfit             overfit
+     MobileNetV3Large__corn     0.9932   0.8941    0.9367              0.0565             -0.0426   0.1623 overfit             overfit
+       MobileNetV3Small__ce     0.9584   0.8542    0.9129              0.0455             -0.0587   0.1304 overfit             overfit
+   MobileNetV3Small__ce__cw     0.9419   0.8542    0.9063              0.0355             -0.0521   0.0952 overfit                mild
+MobileNetV3Small__ce__hires     0.9298   0.8982    0.9077              0.0221             -0.0094   0.0460    mild                none
+   MobileNetV3Small__ce__ls     0.9531   0.8638    0.9050              0.0481             -0.0412   0.0990 overfit                mild
+           NASNetMobile__ce     0.9764   0.8845    0.9208              0.0555             -0.0364   0.1213 overfit             overfit
+               ResNet50__ce     0.9885   0.9023    0.9485              0.0399             -0.0462   0.0966 overfit                mild

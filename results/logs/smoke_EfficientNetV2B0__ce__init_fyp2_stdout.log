@@ -1,0 +1,4 @@
+=== EfficientNetV2B0__ce__init_fyp2  params=5,924,436  batch=32  input=224  class_weights=None ===
+  [head] ep   1 loss 1.7026 | val loss 1.1066 acc 0.4801 qwk 0.4049 f1 0.3828 | lr 1.00e-03 33s *
+  [finetune] ep   2 loss 0.9466 | val loss 0.8451 acc 0.6410 qwk 0.5294 f1 0.5672 | lr 5.05e-05 98s *
+DONE EfficientNetV2B0__ce__init_fyp2: best epoch 2  val qwk 0.5294 acc 0.6410 f1 0.5672 | test qwk 0.6050 acc 0.7137  (2.2 min)

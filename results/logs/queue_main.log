@@ -1,0 +1,31 @@
+19:49:32 official-split reference runs preserved:
+MobileNetV2__ce
+MobileNetV3Small__ce
+19:49:32 start MobileNetV3Small__ce
+DONE MobileNetV3Small/ce: best epoch 34  val qwk 0.7630 acc 0.8542 | test qwk 0.8875 acc 0.9129  (23.2 min)
+20:13:06 end MobileNetV3Small__ce rc=0
+20:13:06 start MobileNetV2__ce
+DONE MobileNetV2/ce: best epoch 33  val qwk 0.7847 acc 0.8569 | test qwk 0.9240 acc 0.9301  (75.1 min)
+21:28:52 end MobileNetV2__ce rc=0
+21:28:52 start MobileNetV3Large__ce
+DONE MobileNetV3Large/ce: best epoch 22  val qwk 0.8003 acc 0.8707 | test qwk 0.8779 acc 0.9077  (75.6 min)
+22:45:22 end MobileNetV3Large__ce rc=0
+22:45:22 start EfficientNetB0__ce
+DONE EfficientNetB0/ce: best epoch 31  val qwk 0.8455 acc 0.8913 | test qwk 0.9022 acc 0.9327  (111.2 min)
+00:37:20 end EfficientNetB0__ce rc=0
+00:37:20 start EfficientNetV2B0__ce
+DONE EfficientNetV2B0/ce: best epoch 31  val qwk 0.8692 acc 0.8955 | test qwk 0.9150 acc 0.9261  (48.7 min)
+01:26:28 end EfficientNetV2B0__ce rc=0
+01:26:28 start NASNetMobile__ce
+DONE NASNetMobile/ce: best epoch 28  val qwk 0.8045 acc 0.8845 | test qwk 0.9040 acc 0.9208  (99.7 min)
+03:06:58 end NASNetMobile__ce rc=0
+03:06:58 start ResNet50__ce
+DONE ResNet50/ce: best epoch 43  val qwk 0.8286 acc 0.9023 | test qwk 0.9318 acc 0.9485  (108.0 min)
+04:55:33 end ResNet50__ce rc=0
+04:55:33 start DenseNet121__ce
+DONE DenseNet121/ce: best epoch 32  val qwk 0.8543 acc 0.9078 | test qwk 0.9098 acc 0.9420  (130.6 min)
+07:06:56 end DenseNet121__ce rc=0
+07:06:56 start ConvNeXtTiny__ce
+DONE ConvNeXtTiny/ce: best epoch 13  val qwk 0.8436 acc 0.9023 | test qwk 0.8984 acc 0.9261  (124.3 min)
+09:12:58 end ConvNeXtTiny__ce rc=0
+QUEUE FINISHED Thu Oct 29 09:12:58 IST 2026

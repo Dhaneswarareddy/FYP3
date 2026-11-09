@@ -1,0 +1,4 @@
+{
+ "run": true,
+ "warning": "Index blocks are unverified filename groupings. They are not slides, ROIs or patients. Do not report them as such."
+}

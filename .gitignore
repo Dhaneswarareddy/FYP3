@@ -1,0 +1,40 @@
+# Clinical and validation image datasets (download per DATASET.md instructions)
+data/
+
+# Heavy deep learning checkpoints (>100MB rejected by GitHub push protection)
+*.keras
+*.h5
+*.weights.h5
+
+# Large deployment bundles (unpacked contents are committed in deployment/models)
+deployment/her2_fyp3_pi_bundle.tar.gz
+*.tar.gz
+*.zip
+
+# Android Studio and Gradle build outputs
+android_app/.gradle/
+android_app/build/
+android_app/app/build/
+android_app/local.properties
+android_app/.idea/
+android_app/*.iml
+android_app/app/*.iml
+*.apk.bak
+
+# Python byte-code and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+
+# macOS system metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes

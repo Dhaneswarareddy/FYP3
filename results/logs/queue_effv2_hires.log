@@ -1,0 +1,4 @@
+21:39:06 start EfficientNetV2B0__ce__hires
+DONE EfficientNetV2B0__ce__hires: best epoch 38  val qwk 0.9345 acc 0.9505 f1 0.9503 | test qwk 0.9587 acc 0.9749  (252.2 min)
+01:52:18 end EfficientNetV2B0__ce__hires rc=0
+VARIANTS FINISHED Fri Oct 30 01:52:18 IST 2026

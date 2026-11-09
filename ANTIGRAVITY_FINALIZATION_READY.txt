@@ -1,0 +1,55 @@
+# ANTIGRAVITY FINALIZATION TOKEN
+STATUS: COMPLETE & VERIFIED
+TIMESTAMP: 2026-10-31T18:02:00+05:30
+AGENT: Antigravity Autonomous Workflow
+PROJECT ROOT: /Users/dhaneswarareddy/Downloads/FYP3
+REFERENCE ROOT: /Users/dhaneswarareddy/Downloads/FYP2 (READ-ONLY CONFIRMED)
+
+================================================================================
+VERIFIED DELIVERABLES:
+================================================================================
+1. [VERIFIED] FYP3/FYP3_FINAL_REPORT.md
+   - Comprehensive 18-section BTech final technical report.
+   - All 6 mandatory scientific disclosures integrated into front matter.
+   - Verified numbers matching all underlying CSV tables.
+
+2. [VERIFIED] FYP3/FYP3_PRESENTATION_OUTLINE.md
+   - 15-slide defense outline for examination committee.
+   - Includes Slide Title, Main Message, 3-5 Bullets, Figure Links, and Speaker Scripts.
+
+3. [VERIFIED] FYP3/final_report_figures/
+   - 11 publication-grade, 300 DPI figures generated programmatically.
+   - Includes fig7_smartphone_edge_benchmark.png (Tri-hardware M35 vs Realme 6 vs Pi 4B), fig7_raspberry_pi4_hardware_benchmark.png, fig9_mobile_app_interface_and_inference.png (Samsung M35), and fig10_realme6_app_interface_and_inference.png (Realme 6).
+   - Accompanied by README.md documenting sources and reproduction commands.
+   - Scripts: generate_final_report_figures.py, generate_smartphone_figures.py, create_app_composite_figure.py, and create_realme_6_composite_figure.py.
+
+4. [VERIFIED] FYP3/FYP3_FINAL_AUDIT.md
+   - Complete forensic audit of all 10 gates.
+   - All 10 gates passed without exception.
+
+5. [VERIFIED] FYP3/ANTIGRAVITY_FINALIZATION_REPORT.md
+   - Comprehensive handover summary documenting created files, data sources, and findings.
+
+6. [VERIFIED] FYP3/android_app/ & FYP3/deployment/benchmark_results/
+   - Full native Android application (`HER2 Mobile Edge`, `app-debug.apk`, 39 MB) compiled and installed over ADB on both Samsung Galaxy M35 5G and Realme 6.
+   - Authoritative physical benchmarks on Samsung Galaxy M35 5G (`benchmark_samsung_m35.csv`, `MOBILE_BENCHMARK_REPORT.md`): 4T Cortex-A78 sweet spot verified at 78.91 ms (12.67 FPS) FP16 and 21.71 ms (46.06 FPS) INT8 at 28.9°C with zero throttling (`0x0`).
+   - Authoritative physical benchmarks on Realme 6 (`benchmark_realme_6.csv`): 8T burst throughput verified at 145.19 ms (6.89 FPS) FP16 and 38.63 ms (25.89 FPS) INT8 at 30.6°C with zero throttling (`0x0`).
+   - Comparative Raspberry Pi 4B benchmarks (`benchmark_primary_pi4.csv`, `benchmark_experimental_pi4.csv`, 353.5 ms throttled at 84.2°C, `0x80008`).
+   - 100.0% prediction agreement with host exclusively across 120 reference clinical tiles tested.
+
+7. [VERIFIED] FYP2 INTEGRITY
+   - /Users/dhaneswarareddy/Downloads/FYP2 strictly untouched.
+   - File modification timestamps intact from Oct 26-28, 2026. Zero bytes modified.
+
+================================================================================
+UNVERIFIED ITEMS / LIMITATIONS (EXPLICITLY DISCLOSED):
+================================================================================
+1. [DISCLOSED] Clinical Validation: Software is research prototype only; no prospective clinical trial data exists.
+2. [DISCLOSED] Patient-Level Generalization: Genuine slide/patient IDs unavailable in BCI & HER2-IHC-40x; all claims restricted to tile-level spatial clusters.
+3. [DISCLOSED] External Test Exposure: External test labels were previously exposed in preliminary stain diagnostic audits; empirical CIs are optimistic.
+4. [DISCLOSED] Borderline Performance: Classification of equivocal 1+ and 2+ tissue remains depressed across architectures (e.g. on test set, EfficientNetV2B0 1+ recall is 0.177 and 2+ precision is 0.093; MobileNetV3Small 2+ recall is 0.090; DenseNet121 1+/2+ recall collapses to 0.000).
+5. [DISCLOSED] HARMONISE Generality: HARMONISE is an asymmetric empirical calibration fitted to HER2-IHC-40x development tiles; not an invariant universal stain normalizer.
+
+TOKEN STATUS: READY FOR FINAL SUBMISSION
+================================================================================
+

@@ -1,0 +1,21 @@
+{
+  "name": "HARMONISE-1",
+  "purpose": "Unsupervised domain-level stain calibration of HER2-IHC-40x tiles towards BCI, with image scale as a controlled factor. No training.",
+  "seed": 42,
+  "paths": {
+    "external_dev_zip": "../her2-ihc-40x-wsi.zip",
+    "external_dev_inner": "WSI-based-dataset/train_data_wsi.zip",
+    "external_test_dir": "../FYP/data/raw/HER2-IHC-40x/wsi_test",
+    "external_baseline_dir": "results/external/her2_40x",
+    "bci_cache_256": "data/ihc_256",
+    "bci_manifest": "splits/split_manifest_grouped.csv"
+  },
+  "sampling": {"n_fit_tiles": 1500, "n_bci_tiles": 1500, "n_dev_eval_tiles": 2000, "pixels_per_tile": 2000},
+  "stain_fit": {"percentiles": [90, 95, 99], "primary_percentile": 95, "gain_limits": [0.05, 20.0]},
+  "scale_grid": [2.0, 3.0, 4.8],
+  "primary_run": "EfficientNetV2B0__ce",
+  "test_panel": ["EfficientNetV2B0__ce", "EfficientNetV2B0__ce__hires", "DenseNet121__ce", "MobileNetV3Large__corn", "MobileNetV3Small__ce"],
+  "selection": {"metric": "balanced_accuracy", "min_gain_over_none": 0.03, "tie_tolerance": 0.01},
+  "success": {"min_delta_balanced_accuracy": 0.10, "ci_must_exclude_zero": true},
+  "bootstrap": {"n": 2000}
+}

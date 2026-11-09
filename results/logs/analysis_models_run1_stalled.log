@@ -1,0 +1,8 @@
+architectures: ['ResNet50', 'DenseNet121', 'ConvNeXtTiny', 'EfficientNetB0', 'EfficientNetV2B0', 'NASNetMobile', 'MobileNetV2', 'MobileNetV3Large', 'MobileNetV3Small']
+frozen ImageNet probe FYP2: acc 0.978 f1 0.978 qwk 0.991
+frozen ImageNet probe BCI: acc 0.765 f1 0.708 qwk 0.698
+--- ResNet50
+  reload diff FYP2 0.00e+00 BCI 0.00e+00 | FYP2->BCI acc 0.420 BCI->FYP2 acc 0.281 | CKA last layer 0.808
+--- DenseNet121
+  reload diff FYP2 0.00e+00 BCI 0.00e+00 | FYP2->BCI acc 0.450 BCI->FYP2 acc 0.328 | CKA last layer 0.845
+--- ConvNeXtTiny

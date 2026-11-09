@@ -1,0 +1,5 @@
+19:14:07 start DenseNet121__corn
+./run_queue.sh: line 6: 27831 Trace/BPT trap: 5       "$PY" train.py --model "$m" --loss "$l" ${extra:+--variant "$extra"} > "../results/logs/train_${name}.log" 2>&1
+DONE DenseNet121/corn: best epoch 30  val qwk 0.8410 acc 0.8803 | test qwk 0.8735 acc 0.9142  (142.8 min)
+21:38:49 end DenseNet121__corn rc=133
+QUEUE FINISHED Thu Oct 29 21:38:49 IST 2026

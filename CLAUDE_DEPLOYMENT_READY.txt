@@ -1,0 +1,26 @@
+CLAUDE DEPLOYMENT PREPARATION COMPLETE
+Status: complete, 30 Oct 2026. Ready for Antigravity to build and test the bundle.
+Blocker for the Raspberry Pi benchmark only: it needs a physical Raspberry Pi 4B. No Pi benchmark has been run.
+
+Documents (FYP3 root unless shown):
+  FINAL_MODEL_SELECTION.md
+  DEPLOYMENT_README.md
+  ANTIGRAVITY_DEPLOYMENT_HANDOFF.md
+  final_reports/final_fyp3_report.md (previous version in final_reports/archive/)
+
+Selected configurations, kept separate:
+  primary       EfficientNetV2B0 448 px FP16, no stain calibration, BCI-like tiles
+  experimental  EfficientNetV2B0 224 px FP16, frozen stain_p99 (g_h 0.2545, g_d 0.5045), HER2-IHC-40x only
+
+Package: /Users/dhaneswarareddy/Downloads/FYP3/deployment/
+
+Verified before writing this file:
+  All files exist. Deployment tests pass, including attempts to mix the modes.
+  Full FP16 validation on the Mac: primary 100% class agreement on 1,485 BCI tiles; experimental 99.6% on 2,402 development tiles.
+  Bundle built, extracted and tested in a scratch folder (benchmark output labelled NOT_A_PI), then removed: Antigravity builds the final one.
+  No training and no lengthy job is running. The external test split was not read in this work.
+  Original results unchanged; the only hash differences are the final report (updated on request) and experiment_audit.md (one rounding fix).
+  No FYP2 file changed.
+
+Disclosed in the documents: genuine WSI identifiers are unavailable; external test labels were previously exposed;
+borderline HER2 performance remains weak; nothing is clinically validated; no Raspberry Pi benchmark exists.

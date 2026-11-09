@@ -1,0 +1,41 @@
+=== NASNetMobile / ce  params=4,273,944  batch=32 ===
+  [head] ep   1 loss 1.1131 | val loss 1.0128 acc 0.5158 qwk 0.3351 f1 0.3738 | lr 1.00e-03 60s *
+  [head] ep   2 loss 0.9955 | val loss 0.9752 acc 0.5406 qwk 0.3247 f1 0.3487 | lr 1.00e-03 51s
+  [head] ep   3 loss 0.9396 | val loss 0.9555 acc 0.5557 qwk 0.3138 f1 0.3592 | lr 1.00e-03 53s
+  [head] ep   4 loss 0.9180 | val loss 0.9335 acc 0.5791 qwk 0.3709 f1 0.4025 | lr 1.00e-03 51s *
+  [head] ep   5 loss 0.8882 | val loss 0.9071 acc 0.5901 qwk 0.4030 f1 0.4429 | lr 1.00e-03 51s *
+  [finetune] ep   6 loss 0.8294 | val loss 0.9389 acc 0.6107 qwk 0.3815 f1 0.4570 | lr 5.05e-05 200s
+  [finetune] ep   7 loss 0.7627 | val loss 0.8620 acc 0.6314 qwk 0.4658 f1 0.5230 | lr 1.00e-04 173s *
+  [finetune] ep   8 loss 0.6022 | val loss 0.7491 acc 0.6891 qwk 0.5195 f1 0.6171 | lr 9.98e-05 172s *
+  [finetune] ep   9 loss 0.5244 | val loss 0.6638 acc 0.7153 qwk 0.5503 f1 0.6565 | lr 9.93e-05 172s *
+  [finetune] ep  10 loss 0.4436 | val loss 0.6634 acc 0.7373 qwk 0.5340 f1 0.6708 | lr 9.85e-05 173s
+  [finetune] ep  11 loss 0.4370 | val loss 0.7629 acc 0.6699 qwk 0.4997 f1 0.6078 | lr 9.73e-05 173s
+  [finetune] ep  12 loss 0.4036 | val loss 0.5000 acc 0.8088 qwk 0.6745 f1 0.7451 | lr 9.58e-05 173s *
+  [finetune] ep  13 loss 0.3654 | val loss 0.5748 acc 0.7868 qwk 0.7021 f1 0.7494 | lr 9.40e-05 175s *
+  [finetune] ep  14 loss 0.3041 | val loss 0.5018 acc 0.8129 qwk 0.6818 f1 0.7628 | lr 9.19e-05 173s
+  [finetune] ep  15 loss 0.3433 | val loss 0.4287 acc 0.8294 qwk 0.6558 f1 0.7817 | lr 8.95e-05 173s
+  [finetune] ep  16 loss 0.2969 | val loss 0.4379 acc 0.8432 qwk 0.7224 f1 0.8018 | lr 8.68e-05 169s *
+  [finetune] ep  17 loss 0.2698 | val loss 0.4506 acc 0.8171 qwk 0.6283 f1 0.7695 | lr 8.39e-05 159s
+  [finetune] ep  18 loss 0.2595 | val loss 0.4634 acc 0.8116 qwk 0.6905 f1 0.7955 | lr 8.07e-05 174s
+  [finetune] ep  19 loss 0.2443 | val loss 0.4429 acc 0.8391 qwk 0.6548 f1 0.7581 | lr 7.73e-05 173s
+  [finetune] ep  20 loss 0.2078 | val loss 0.4050 acc 0.8528 qwk 0.7547 f1 0.8325 | lr 7.38e-05 169s *
+  [finetune] ep  21 loss 0.1941 | val loss 0.3889 acc 0.8611 qwk 0.7459 f1 0.8179 | lr 7.01e-05 172s
+  [finetune] ep  22 loss 0.1702 | val loss 0.4222 acc 0.8404 qwk 0.7527 f1 0.8175 | lr 6.62e-05 170s
+  [finetune] ep  23 loss 0.1713 | val loss 0.4721 acc 0.8418 qwk 0.7073 f1 0.8125 | lr 6.23e-05 177s
+  [finetune] ep  24 loss 0.1671 | val loss 0.4606 acc 0.8404 qwk 0.7290 f1 0.8140 | lr 5.82e-05 171s
+  [finetune] ep  25 loss 0.1550 | val loss 0.4245 acc 0.8487 qwk 0.7535 f1 0.8202 | lr 5.41e-05 170s
+  [finetune] ep  26 loss 0.1361 | val loss 0.5024 acc 0.8418 qwk 0.7310 f1 0.8198 | lr 5.00e-05 173s
+  [finetune] ep  27 loss 0.1277 | val loss 0.4767 acc 0.8487 qwk 0.7299 f1 0.8281 | lr 4.59e-05 170s
+  [finetune] ep  28 loss 0.1220 | val loss 0.3631 acc 0.8845 qwk 0.8045 f1 0.8653 | lr 4.18e-05 177s *
+  [finetune] ep  29 loss 0.0916 | val loss 0.3707 acc 0.8803 qwk 0.7818 f1 0.8621 | lr 3.77e-05 171s
+  [finetune] ep  30 loss 0.0834 | val loss 0.4624 acc 0.8666 qwk 0.7701 f1 0.8453 | lr 3.38e-05 171s
+  [finetune] ep  31 loss 0.1029 | val loss 0.4715 acc 0.8597 qwk 0.7890 f1 0.8563 | lr 2.99e-05 176s
+  [finetune] ep  32 loss 0.0872 | val loss 0.4703 acc 0.8638 qwk 0.7748 f1 0.8314 | lr 2.62e-05 173s
+  [finetune] ep  33 loss 0.0846 | val loss 0.4135 acc 0.8638 qwk 0.7768 f1 0.8404 | lr 2.27e-05 172s
+  [finetune] ep  34 loss 0.0659 | val loss 0.4144 acc 0.8638 qwk 0.7803 f1 0.8443 | lr 1.93e-05 176s
+  [finetune] ep  35 loss 0.0526 | val loss 0.4171 acc 0.8762 qwk 0.7786 f1 0.8463 | lr 1.61e-05 170s
+  [finetune] ep  36 loss 0.0566 | val loss 0.4509 acc 0.8583 qwk 0.7363 f1 0.8298 | lr 1.32e-05 175s
+  [finetune] ep  37 loss 0.0435 | val loss 0.4531 acc 0.8735 qwk 0.7902 f1 0.8485 | lr 1.05e-05 173s
+  [finetune] ep  38 loss 0.0435 | val loss 0.4593 acc 0.8693 qwk 0.7670 f1 0.8416 | lr 8.14e-06 172s
+  early stop (no val QWK improvement for 10 epochs)
+DONE NASNetMobile/ce: best epoch 28  val qwk 0.8045 acc 0.8845 | test qwk 0.9040 acc 0.9208  (99.7 min)

@@ -1,0 +1,7 @@
+=== EfficientNetV2B0__ce__lowbatch  params=5,924,436  batch=8  input=224  class_weights=None ===
+  [head] ep   1 loss 1.0126 | val loss 0.9532 acc 0.5695 qwk 0.4626 f1 0.4589 | lr 1.00e-03 42s *
+  [head] ep   2 loss 0.8808 | val loss 0.8881 acc 0.5983 qwk 0.4586 f1 0.4761 | lr 1.00e-03 42s
+  [head] ep   3 loss 0.8296 | val loss 0.8649 acc 0.6121 qwk 0.4202 f1 0.4718 | lr 1.00e-03 42s
+  [head] ep   4 loss 0.7860 | val loss 0.8134 acc 0.6809 qwk 0.5144 f1 0.5619 | lr 1.00e-03 50s *
+  [head] ep   5 loss 0.7596 | val loss 0.7972 acc 0.6616 qwk 0.4997 f1 0.5693 | lr 1.00e-03 38s
+  [finetune] ep   6 loss 0.7137 | val loss 0.7579 acc 0.6864 qwk 0.5380 f1 0.6093 | lr 5.01e-05 223s *

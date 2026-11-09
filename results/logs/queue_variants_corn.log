@@ -1,0 +1,20 @@
+16:20:02 start MobileNetV3Small__ce__cw
+DONE MobileNetV3Small__ce__cw: best epoch 34  val qwk 0.7864 acc 0.8542 f1 0.8325 | test qwk 0.8834 acc 0.9063  (15.2 min)
+16:35:28 end MobileNetV3Small__ce__cw rc=0
+16:35:28 start MobileNetV3Small__ce__ls
+DONE MobileNetV3Small__ce__ls: best epoch 31  val qwk 0.7669 acc 0.8638 f1 0.8326 | test qwk 0.8734 acc 0.9050  (16.1 min)
+16:51:48 end MobileNetV3Small__ce__ls rc=0
+16:51:48 start MobileNetV3Small__ce__hires
+DONE MobileNetV3Small__ce__hires: best epoch 15  val qwk 0.8654 acc 0.8982 f1 0.8933 | test qwk 0.8740 acc 0.9077  (45.0 min)
+17:37:15 end MobileNetV3Small__ce__hires rc=0
+VARIANTS FINISHED Thu Oct 29 17:37:15 IST 2026
+17:37:15 start DenseNet121__corn
+./run_queue.sh: line 6: 23766 Segmentation fault: 11  "$PY" train.py --model "$m" --loss "$l" ${extra:+--variant "$extra"} > "../results/logs/train_${name}.log" 2>&1
+17:55:34 end DenseNet121__corn rc=139
+17:55:34 start EfficientNetV2B0__corn
+DONE EfficientNetV2B0/corn: best epoch 16  val qwk 0.8306 acc 0.8624 | test qwk 0.8920 acc 0.9063  (29.8 min)
+18:25:59 end EfficientNetV2B0__corn rc=0
+18:25:59 start MobileNetV3Large__corn
+DONE MobileNetV3Large/corn: best epoch 45  val qwk 0.8253 acc 0.8941 | test qwk 0.9233 acc 0.9367  (47.2 min)
+19:13:38 end MobileNetV3Large__corn rc=0
+QUEUE FINISHED Thu Oct 29 19:13:38 IST 2026

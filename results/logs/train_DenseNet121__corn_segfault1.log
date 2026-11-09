@@ -1,0 +1,8 @@
+=== DenseNet121 / corn  params=7,040,579  batch=16 ===
+  [head] ep   1 loss 0.4299 | val loss 0.3961 acc 0.5089 qwk 0.3975 f1 0.3663 | lr 1.00e-03 79s *
+  [head] ep   2 loss 0.3703 | val loss 0.3810 acc 0.5420 qwk 0.3727 f1 0.3601 | lr 1.00e-03 74s
+  [head] ep   3 loss 0.3497 | val loss 0.3644 acc 0.5805 qwk 0.4080 f1 0.4016 | lr 1.00e-03 74s *
+  [head] ep   4 loss 0.3396 | val loss 0.3571 acc 0.5805 qwk 0.3966 f1 0.4071 | lr 1.00e-03 73s
+  [head] ep   5 loss 0.3311 | val loss 0.3514 acc 0.5818 qwk 0.4231 f1 0.4407 | lr 1.00e-03 72s *
+  [finetune] ep   6 loss 0.3204 | val loss 0.3443 acc 0.6190 qwk 0.4945 f1 0.5228 | lr 5.02e-05 254s *
+  [finetune] ep   7 loss 0.3056 | val loss 0.3276 acc 0.7043 qwk 0.5802 f1 0.6054 | lr 1.00e-04 226s *

@@ -1,0 +1,28 @@
+CLAUDE RELIABILITY PREPARATION COMPLETE
+Status: complete, 30 Oct 2026. HARMONISE-2 is READY TO EXECUTE.
+Antigravity may begin. Follow ANTIGRAVITY_RELIABILITY_HANDOFF.md in order, stopping at any failed gate.
+
+Handoff:
+  /Users/dhaneswarareddy/Downloads/FYP3/ANTIGRAVITY_RELIABILITY_HANDOFF.md
+
+Experiment files, in /Users/dhaneswarareddy/Downloads/FYP3/next_experiment/harmonise2/ :
+  run_h2.py, h2_lib.py, config.json, requirements.txt, smoke_all.sh
+  README.md (method), PREPARATION_AUDIT.md (HARMONISE-1 audit)
+
+Prepared experiments:
+  A Calibration stability        ready
+  B WSI-level generalisation     BLOCKED AS SPECIFIED: no genuine slide identifiers exist.
+                                 The stage documents why. An unverified index-block surrogate runs only if its pre-set check passes.
+  C Class-wise reliability       ready
+  D Resolution compatibility     ready
+  E Prediction confidence        ready
+
+Verified before writing this file:
+  All files exist; every stage is in the driver and in the handoff.
+  All 17 stages passed the smoke test on the final code. Smoke outputs in outputs_smoke/ are not results.
+  No training process and no lengthy experiment was launched or is running.
+  harmonise2/outputs/ does not exist yet.
+  Original artifacts unchanged, including HARMONISE-1 outputs. No FYP2 file changed during this work.
+  The external test split is not read by any HARMONISE-2 stage.
+
+Blocker for B only, and it does not stop the run: a patch-to-slide mapping, or the original WSI/ and ROI/ folders, must come from the dataset authors.

@@ -1,0 +1,29 @@
+{
+ "arch": "DenseNet121",
+ "A": {
+  "scale": 0.2,
+  "n": 270,
+  "share_1plus_before": 0.0,
+  "share_1plus_after": 0.14444444444444443
+ },
+ "B": {
+  "scale": 5.0,
+  "n": 90,
+  "share_1plus_before": 1.0,
+  "share_1plus_after": 0.011111111111111112
+ },
+ "C": {
+  "scale": 5.0,
+  "n": 758,
+  "share_1plus_before": 0.7572559366754618,
+  "share_1plus_after": 0.12532981530343007,
+  "balanced_accuracy_before": 0.4320451321345181,
+  "balanced_accuracy_after": 0.3160953906445172,
+  "predicted_share_after": [
+   500,
+   95,
+   118,
+   45
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "arch": "NASNetMobile",
+ "A": {
+  "scale": 0.2,
+  "n": 270,
+  "share_1plus_before": 0.0,
+  "share_1plus_after": 0.4888888888888889
+ },
+ "B": {
+  "scale": 5.0,
+  "n": 90,
+  "share_1plus_before": 1.0,
+  "share_1plus_after": 0.4444444444444444
+ },
+ "C": {
+  "scale": 5.0,
+  "n": 758,
+  "share_1plus_before": 0.7137203166226913,
+  "share_1plus_after": 0.10026385224274406,
+  "balanced_accuracy_before": 0.45536125073626654,
+  "balanced_accuracy_after": 0.3553800173619277,
+  "predicted_share_after": [
+   103,
+   76,
+   574,
+   5
+  ]
+ }
+}

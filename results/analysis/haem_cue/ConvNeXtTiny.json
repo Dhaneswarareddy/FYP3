@@ -1,0 +1,29 @@
+{
+ "arch": "ConvNeXtTiny",
+ "A": {
+  "scale": 0.2,
+  "n": 270,
+  "share_1plus_before": 0.0,
+  "share_1plus_after": 0.13703703703703704
+ },
+ "B": {
+  "scale": 5.0,
+  "n": 90,
+  "share_1plus_before": 1.0,
+  "share_1plus_after": 0.4666666666666667
+ },
+ "C": {
+  "scale": 5.0,
+  "n": 758,
+  "share_1plus_before": 0.5356200527704486,
+  "share_1plus_after": 0.29023746701846964,
+  "balanced_accuracy_before": 0.4220907667594662,
+  "balanced_accuracy_after": 0.34234177556320206,
+  "predicted_share_after": [
+   100,
+   220,
+   411,
+   27
+  ]
+ }
+}

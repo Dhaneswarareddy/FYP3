@@ -1,0 +1,24 @@
+{
+ "primary_val": {
+  "n": 727,
+  "class_agreement": 1.0,
+  "max_abs_dp": 0.019941657781600952,
+  "accuracy": 0.9504814305364512
+ },
+ "primary_test": {
+  "n": 758,
+  "class_agreement": 1.0,
+  "max_abs_dp": 0.01825171709060669,
+  "accuracy": 0.974934036939314
+ },
+ "experimental_R_eval": {
+  "n": 2402,
+  "class_agreement": 0.9962531223980017,
+  "max_abs_dp": 0.013501852750778198,
+  "accuracy": 0.4845961698584513
+ },
+ "worst_class_agreement": 0.9962531223980017,
+ "worst_max_abs_dp": 0.019941657781600952,
+ "go": true,
+ "limit": 0
+}

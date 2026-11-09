@@ -1,0 +1,84 @@
+                 run split_design split     size_bin   n  accuracy  seen_fragment_share
+     MobileNetV2__ce     official  test 1 (unlinked) 326     0.871                0.000
+     MobileNetV2__ce     official  test          2-3 215     0.884                0.795
+     MobileNetV2__ce     official  test         4-10 168     0.929                0.976
+     MobileNetV2__ce     official  test          >10 268     0.966                1.000
+     MobileNetV2__ce      grouped   val 1 (unlinked) 245     0.845                0.000
+     MobileNetV2__ce      grouped   val          2-3 143     0.874                0.000
+     MobileNetV2__ce      grouped   val         4-10 141     0.915                0.000
+     MobileNetV2__ce      grouped   val          >10 198     0.818                0.000
+     MobileNetV2__ce      grouped  test 1 (unlinked) 237     0.899                0.000
+     MobileNetV2__ce      grouped  test          2-3 136     0.890                0.000
+     MobileNetV2__ce      grouped  test         4-10 136     0.926                0.000
+     MobileNetV2__ce      grouped  test          >10 249     0.984                0.000
+MobileNetV3Small__ce     official  test 1 (unlinked) 326     0.847                0.000
+MobileNetV3Small__ce     official  test          2-3 215     0.898                0.795
+MobileNetV3Small__ce     official  test         4-10 168     0.923                0.976
+MobileNetV3Small__ce     official  test          >10 268     0.959                1.000
+MobileNetV3Small__ce      grouped   val 1 (unlinked) 245     0.857                0.000
+MobileNetV3Small__ce      grouped   val          2-3 143     0.839                0.000
+MobileNetV3Small__ce      grouped   val         4-10 141     0.922                0.000
+MobileNetV3Small__ce      grouped   val          >10 198     0.813                0.000
+MobileNetV3Small__ce      grouped  test 1 (unlinked) 237     0.848                0.000
+MobileNetV3Small__ce      grouped  test          2-3 136     0.853                0.000
+MobileNetV3Small__ce      grouped  test         4-10 136     0.949                0.000
+MobileNetV3Small__ce      grouped  test          >10 249     0.988                0.000 
+
+                 run                     tile_set grouped_split        subset   n  n_fragments  acc_official_model  acc_grouped_model   diff  diff_ci_lo  diff_ci_hi  only_official_right  only_grouped_right
+     MobileNetV2__ce official test ∩ grouped test          test           all 156           95               0.962              0.942  0.019      -0.017       0.062                    6                   3
+     MobileNetV2__ce official test ∩ grouped test          test seen fragment  96           39               0.979              0.969  0.010       0.000       0.042                    1                   0
+     MobileNetV2__ce official test ∩ grouped test          test      unlinked  53           53               0.925              0.906  0.019      -0.075       0.113                    4                   3
+     MobileNetV2__ce  official test ∩ grouped val           val           all 145           94               0.931              0.876  0.055       0.008       0.099                   12                   4
+     MobileNetV2__ce  official test ∩ grouped val           val seen fragment 101           51               0.970              0.901  0.069       0.029       0.110                    8                   1
+     MobileNetV2__ce  official test ∩ grouped val           val      unlinked  41           41               0.829              0.805  0.024      -0.098       0.171                    4                   3
+MobileNetV3Small__ce official test ∩ grouped test          test           all 156           95               0.942              0.929  0.013      -0.024       0.056                    5                   3
+MobileNetV3Small__ce official test ∩ grouped test          test seen fragment  96           39               0.969              0.990 -0.021      -0.056       0.000                    0                   2
+MobileNetV3Small__ce official test ∩ grouped test          test      unlinked  53           53               0.887              0.830  0.057      -0.019       0.151                    4                   1
+MobileNetV3Small__ce  official test ∩ grouped val           val           all 145           94               0.903              0.848  0.055      -0.008       0.114                   12                   4
+MobileNetV3Small__ce  official test ∩ grouped val           val seen fragment 101           51               0.941              0.881  0.059      -0.011       0.136                    8                   2
+MobileNetV3Small__ce  official test ∩ grouped val           val      unlinked  41           41               0.805              0.756  0.049      -0.073       0.171                    4                   2 
+
+                 run split_design split   n  accuracy  macro_f1   qwk  accuracy_ci_lo  accuracy_ci_hi  qwk_ci_lo  qwk_ci_hi  macro_f1_ci_lo  macro_f1_ci_hi
+     MobileNetV2__ce     official   val 585     0.926     0.930 0.914           0.904           0.948      0.873      0.947           0.905           0.953
+     MobileNetV2__ce     official  test 977     0.910     0.889 0.859           0.890           0.929      0.813      0.899           0.856           0.918
+     MobileNetV2__ce      grouped   val 727     0.857     0.850 0.785           0.823           0.892      0.699      0.861           0.812           0.886
+     MobileNetV2__ce      grouped  test 758     0.930     0.928 0.924           0.897           0.953      0.874      0.953           0.896           0.949
+MobileNetV3Small__ce     official   val 585     0.899     0.870 0.836           0.872           0.924      0.767      0.896           0.821           0.911
+MobileNetV3Small__ce     official  test 977     0.902     0.885 0.867           0.881           0.922      0.826      0.902           0.853           0.911
+MobileNetV3Small__ce      grouped   val 727     0.854     0.833 0.763           0.813           0.894      0.668      0.842           0.787           0.873
+MobileNetV3Small__ce      grouped  test 758     0.913     0.895 0.888           0.873           0.942      0.810      0.932           0.851           0.923 
+
+                        run split   n  accuracy  errors top3_fragments  top3_tiles  top3_error_share  accuracy_without_top3
+           ConvNeXtTiny__ce   val 727     0.902      71    25, 31, 304         112             0.380                  0.928
+           ConvNeXtTiny__ce  test 758     0.926      56   170, 368, 16          12             0.161                  0.937
+            DenseNet121__ce   val 727     0.908      67    25, 31, 304         112             0.328                  0.927
+            DenseNet121__ce  test 758     0.942      44   352, 435, 16          11             0.182                  0.952
+          DenseNet121__corn   val 727     0.880      87    25, 31, 126         110             0.460                  0.924
+          DenseNet121__corn  test 758     0.914      65  170, 352, 435          16             0.169                  0.927
+         EfficientNetB0__ce   val 727     0.891      79    31, 25, 140         153             0.367                  0.913
+         EfficientNetB0__ce  test 758     0.933      51  352, 104, 122          68             0.196                  0.941
+       EfficientNetV2B0__ce   val 727     0.895      76    25, 31, 304         112             0.303                  0.914
+       EfficientNetV2B0__ce  test 758     0.926      56  352, 219, 368          16             0.125                  0.934
+EfficientNetV2B0__ce__hires   val 727     0.950      36    31, 25, 456         106             0.417                  0.966
+EfficientNetV2B0__ce__hires  test 758     0.975      19  170, 221, 352          90             0.316                  0.981
+     EfficientNetV2B0__corn   val 727     0.862     100    25, 31, 126         110             0.340                  0.893
+     EfficientNetV2B0__corn  test 758     0.906      71  221, 122, 219         138             0.155                  0.903
+            MobileNetV2__ce   val 727     0.857     104    25, 31, 140         153             0.337                  0.880
+            MobileNetV2__ce  test 758     0.930      53  104, 170, 215          17             0.132                  0.938
+       MobileNetV3Large__ce   val 727     0.871      94    25, 31, 776         111             0.447                  0.916
+       MobileNetV3Large__ce  test 758     0.908      70  170, 221, 352          90             0.157                  0.912
+     MobileNetV3Large__corn   val 727     0.894      77    25, 31, 140         153             0.442                  0.925
+     MobileNetV3Large__corn  test 758     0.937      48  221, 104, 160          87             0.208                  0.943
+       MobileNetV3Small__ce   val 727     0.854     106    25, 31, 140         153             0.330                  0.876
+       MobileNetV3Small__ce  test 758     0.913      66  160, 170, 221          86             0.091                  0.911
+   MobileNetV3Small__ce__cw   val 727     0.854     106    31, 25, 126         110             0.264                  0.874
+   MobileNetV3Small__ce__cw  test 758     0.906      71  221, 160, 352          85             0.113                  0.906
+MobileNetV3Small__ce__hires   val 727     0.898      74    31, 25, 126         110             0.257                  0.911
+MobileNetV3Small__ce__hires  test 758     0.908      70  122, 170, 221         138             0.157                  0.905
+   MobileNetV3Small__ce__ls   val 727     0.864      99   25, 31, 1021         108             0.313                  0.890
+   MobileNetV3Small__ce__ls  test 758     0.905      72  170, 219, 221          91             0.083                  0.901
+           NASNetMobile__ce   val 727     0.884      84    25, 31, 140         153             0.310                  0.899
+           NASNetMobile__ce  test 758     0.921      60  352, 368, 160          11             0.133                  0.930
+               ResNet50__ce   val 727     0.902      71    25, 31, 140         153             0.324                  0.916
+               ResNet50__ce  test 758     0.949      39 160, 435, 1540           7             0.154                  0.956 
+

@@ -1,0 +1,5 @@
+WARNING:tensorflow:`input_shape` is undefined or non-square, or `rows` is not 224. Weights for input shape (224, 224) will be loaded as the default.
+=== MobileNetV3Small__ce__hires  params=941,428  batch=8  input=448  class_weights=None ===
+  [head] ep   1 loss 1.0262 | val loss 0.9326 acc 0.5818 qwk 0.4391 f1 0.4357 | lr 1.00e-03 42s *
+  [finetune] ep   2 loss 0.8387 | val loss 0.8172 acc 0.6162 qwk 0.4484 f1 0.4637 | lr 5.01e-05 90s *
+DONE MobileNetV3Small__ce__hires: best epoch 2  val qwk 0.4484 acc 0.6162 f1 0.4637 | test qwk 0.6099 acc 0.7032  (2.2 min)

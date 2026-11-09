@@ -1,0 +1,11 @@
+{
+ "none": {
+  "balanced_accuracy": 0.2955810975791323,
+  "stored": 0.2955810975791323
+ },
+ "stain_p99": {
+  "balanced_accuracy": 0.510353973400556,
+  "stored": 0.510353973400556
+ },
+ "ok": true
+}

@@ -1,0 +1,22 @@
+{
+ "primary_val": {
+  "n": 48,
+  "class_agreement": 1.0,
+  "max_abs_dp": 0.013301312923431396,
+  "accuracy": 0.8958333333333334
+ },
+ "primary_test": {
+  "n": 48,
+  "class_agreement": 1.0,
+  "max_abs_dp": 0.0014837384223937988,
+  "accuracy": 0.9791666666666666
+ },
+ "experimental_R_eval": {
+  "n": 48,
+  "class_agreement": 1.0,
+  "max_abs_dp": 0.005499899387359619,
+  "accuracy": 0.5625
+ },
+ "go": true,
+ "limit": 48
+}

@@ -1,0 +1,4 @@
+=== MobileNetV3Small__ce__lowbatch  params=941,428  batch=8  input=224  class_weights=None ===
+  [head] ep   1 loss 1.0587 | val loss 0.9886 acc 0.5034 qwk 0.3971 f1 0.3862 | lr 1.00e-03 25s *
+  [finetune] ep   2 loss 0.8978 | val loss 0.8887 acc 0.6039 qwk 0.4105 f1 0.4252 | lr 5.01e-05 43s *
+DONE MobileNetV3Small__ce__lowbatch: best epoch 2  val qwk 0.4105 acc 0.6039 f1 0.4252 | test qwk 0.5112 acc 0.6636  (1.1 min)

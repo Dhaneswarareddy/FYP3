@@ -1,0 +1,10 @@
+{
+ "primary_run": "EfficientNetV2B0__ce",
+ "arm": "stain_p99",
+ "delta_balanced_accuracy": 0.20242365047884486,
+ "ci": [
+  0.1465166031155272,
+  0.2581642225006578
+ ],
+ "success": true
+}

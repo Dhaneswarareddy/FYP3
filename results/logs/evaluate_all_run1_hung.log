@@ -1,0 +1,5 @@
+ConvNeXtTiny__ce: train acc 0.9782  val 0.9023  test 0.9261
+DenseNet121__ce: train acc 0.9746  val 0.9078  test 0.9420
+DenseNet121__corn: train acc 0.9566  val 0.8803  test 0.9142
+EfficientNetB0__ce: train acc 0.9935  val 0.8913  test 0.9327
+EfficientNetV2B0__ce: train acc 0.9920  val 0.8955  test 0.9261

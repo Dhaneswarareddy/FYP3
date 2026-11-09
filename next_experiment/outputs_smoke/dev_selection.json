@@ -1,0 +1,13 @@
+{
+ "baseline": 0.25,
+ "best": 0.2925824175824176,
+ "selected": "stain_p95",
+ "metric": "balanced_accuracy",
+ "n_dev": 40,
+ "arm": {
+  "name": "stain_p95",
+  "scale": 1.0,
+  "g_h": 0.2966412469099435,
+  "g_d": 0.21185256465453844
+ }
+}

@@ -1,0 +1,46 @@
+=== MobileNetV2 / ce  params=2,263,108  batch=32 ===
+  [head] ep   1 loss 1.1737 | val loss 0.9995 acc 0.5433 qwk 0.3912 f1 0.4088 | lr 1.00e-03 70s *
+  [head] ep   2 loss 0.9305 | val loss 0.9629 acc 0.5722 qwk 0.3474 f1 0.4060 | lr 1.00e-03 73s
+  [head] ep   3 loss 0.8612 | val loss 0.9270 acc 0.6149 qwk 0.4517 f1 0.4857 | lr 1.00e-03 47s *
+  [head] ep   4 loss 0.8249 | val loss 0.8907 acc 0.6217 qwk 0.4272 f1 0.5078 | lr 1.00e-03 44s
+  [head] ep   5 loss 0.8106 | val loss 0.8726 acc 0.6314 qwk 0.4549 f1 0.5314 | lr 1.00e-03 42s *
+  [finetune] ep   6 loss 0.8228 | val loss 0.8809 acc 0.6231 qwk 0.3383 f1 0.4535 | lr 5.05e-05 100s
+  [finetune] ep   7 loss 0.8384 | val loss 0.9755 acc 0.5805 qwk 0.3804 f1 0.4391 | lr 1.00e-04 76s
+  [finetune] ep   8 loss 0.7685 | val loss 0.9290 acc 0.5956 qwk 0.3930 f1 0.4264 | lr 9.98e-05 76s
+  [finetune] ep   9 loss 0.7303 | val loss 0.7824 acc 0.6589 qwk 0.5364 f1 0.5887 | lr 9.93e-05 77s *
+  [finetune] ep  10 loss 0.6462 | val loss 0.7576 acc 0.6905 qwk 0.5979 f1 0.5962 | lr 9.85e-05 376s *
+  [finetune] ep  11 loss 0.5837 | val loss 0.6710 acc 0.7001 qwk 0.4614 f1 0.5840 | lr 9.73e-05 66s
+  [finetune] ep  12 loss 0.5644 | val loss 0.6936 acc 0.6988 qwk 0.5421 f1 0.6339 | lr 9.58e-05 136s
+  [finetune] ep  13 loss 0.5347 | val loss 0.6351 acc 0.7345 qwk 0.5591 f1 0.6410 | lr 9.40e-05 123s
+  [finetune] ep  14 loss 0.5008 | val loss 0.5851 acc 0.7552 qwk 0.5775 f1 0.6981 | lr 9.19e-05 97s
+  [finetune] ep  15 loss 0.4711 | val loss 0.5736 acc 0.7634 qwk 0.6084 f1 0.7033 | lr 8.95e-05 128s *
+  [finetune] ep  16 loss 0.4265 | val loss 0.5684 acc 0.7593 qwk 0.6044 f1 0.6878 | lr 8.68e-05 105s
+  [finetune] ep  17 loss 0.4226 | val loss 0.5633 acc 0.7607 qwk 0.6426 f1 0.7215 | lr 8.39e-05 103s *
+  [finetune] ep  18 loss 0.4056 | val loss 0.6632 acc 0.7166 qwk 0.4900 f1 0.6254 | lr 8.07e-05 106s
+  [finetune] ep  19 loss 0.3869 | val loss 0.4916 acc 0.7978 qwk 0.5744 f1 0.7362 | lr 7.73e-05 116s
+  [finetune] ep  20 loss 0.3720 | val loss 0.4990 acc 0.7923 qwk 0.6005 f1 0.7305 | lr 7.38e-05 117s
+  [finetune] ep  21 loss 0.3478 | val loss 0.5090 acc 0.7923 qwk 0.6595 f1 0.7407 | lr 7.01e-05 102s *
+  [finetune] ep  22 loss 0.3455 | val loss 0.4831 acc 0.7950 qwk 0.6948 f1 0.7647 | lr 6.62e-05 125s *
+  [finetune] ep  23 loss 0.3337 | val loss 0.5117 acc 0.7992 qwk 0.6762 f1 0.7670 | lr 6.23e-05 114s
+  [finetune] ep  24 loss 0.3078 | val loss 0.5032 acc 0.8074 qwk 0.6718 f1 0.7743 | lr 5.82e-05 107s
+  [finetune] ep  25 loss 0.2751 | val loss 0.4338 acc 0.8212 qwk 0.6285 f1 0.7380 | lr 5.41e-05 104s
+  [finetune] ep  26 loss 0.2581 | val loss 0.4350 acc 0.8336 qwk 0.7324 f1 0.8136 | lr 5.00e-05 94s *
+  [finetune] ep  27 loss 0.2465 | val loss 0.4517 acc 0.8308 qwk 0.6886 f1 0.7906 | lr 4.59e-05 80s
+  [finetune] ep  28 loss 0.2326 | val loss 0.4338 acc 0.8377 qwk 0.7482 f1 0.8260 | lr 4.18e-05 90s *
+  [finetune] ep  29 loss 0.2007 | val loss 0.4163 acc 0.8459 qwk 0.7188 f1 0.8178 | lr 3.77e-05 88s
+  [finetune] ep  30 loss 0.2125 | val loss 0.4072 acc 0.8432 qwk 0.7336 f1 0.8198 | lr 3.38e-05 91s
+  [finetune] ep  31 loss 0.1865 | val loss 0.4320 acc 0.8391 qwk 0.7808 f1 0.8300 | lr 2.99e-05 91s *
+  [finetune] ep  32 loss 0.1870 | val loss 0.4265 acc 0.8528 qwk 0.7749 f1 0.8348 | lr 2.62e-05 92s
+  [finetune] ep  33 loss 0.1775 | val loss 0.3871 acc 0.8569 qwk 0.7847 f1 0.8499 | lr 2.27e-05 113s *
+  [finetune] ep  34 loss 0.1591 | val loss 0.3787 acc 0.8528 qwk 0.7591 f1 0.8312 | lr 1.93e-05 96s
+  [finetune] ep  35 loss 0.1474 | val loss 0.3839 acc 0.8459 qwk 0.7356 f1 0.8219 | lr 1.61e-05 124s
+  [finetune] ep  36 loss 0.1445 | val loss 0.4122 acc 0.8404 qwk 0.7183 f1 0.8171 | lr 1.32e-05 110s
+  [finetune] ep  37 loss 0.1323 | val loss 0.3826 acc 0.8569 qwk 0.7778 f1 0.8383 | lr 1.05e-05 95s
+  [finetune] ep  38 loss 0.1322 | val loss 0.3621 acc 0.8624 qwk 0.7764 f1 0.8415 | lr 8.14e-06 91s
+  [finetune] ep  39 loss 0.1406 | val loss 0.3699 acc 0.8638 qwk 0.7630 f1 0.8317 | lr 6.03e-06 94s
+  [finetune] ep  40 loss 0.1259 | val loss 0.3624 acc 0.8611 qwk 0.7828 f1 0.8491 | lr 4.21e-06 140s
+  [finetune] ep  41 loss 0.1191 | val loss 0.3625 acc 0.8624 qwk 0.7726 f1 0.8379 | lr 2.71e-06 135s
+  [finetune] ep  42 loss 0.1067 | val loss 0.3687 acc 0.8611 qwk 0.7724 f1 0.8387 | lr 1.53e-06 122s
+  [finetune] ep  43 loss 0.1118 | val loss 0.3671 acc 0.8624 qwk 0.7759 f1 0.8424 | lr 6.82e-07 120s
+  early stop (no val QWK improvement for 10 epochs)
+DONE MobileNetV2/ce: best epoch 33  val qwk 0.7847 acc 0.8569 | test qwk 0.9240 acc 0.9301  (75.1 min)

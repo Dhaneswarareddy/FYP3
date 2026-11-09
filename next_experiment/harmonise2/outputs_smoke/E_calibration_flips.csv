@@ -1,0 +1,3 @@
+run,flip_rate,error_if_flipped,error_if_stable
+EfficientNetV2B0__ce,0.4444444444444444,0.5625,0.3
+MobileNetV3Small__ce,0.2222222222222222,1.0,0.32142857142857145

@@ -1,0 +1,4 @@
+18:35:46 start MobileNetV3Small__ce
+DONE MobileNetV3Small/ce: best epoch 29  val qwk 0.8361 acc 0.8991 | test qwk 0.8669 acc 0.9017  (24.4 min)
+19:00:32 end MobileNetV3Small__ce rc=0
+19:00:32 start MobileNetV2__ce

@@ -1,0 +1,29 @@
+{
+ "arch": "ResNet50",
+ "A": {
+  "scale": 0.2,
+  "n": 270,
+  "share_1plus_before": 0.0,
+  "share_1plus_after": 0.10740740740740741
+ },
+ "B": {
+  "scale": 5.0,
+  "n": 90,
+  "share_1plus_before": 1.0,
+  "share_1plus_after": 0.0
+ },
+ "C": {
+  "scale": 5.0,
+  "n": 758,
+  "share_1plus_before": 0.7651715039577837,
+  "share_1plus_after": 0.18337730870712401,
+  "balanced_accuracy_before": 0.40372744791329307,
+  "balanced_accuracy_after": 0.34840681446424226,
+  "predicted_share_after": [
+   374,
+   139,
+   221,
+   24
+  ]
+ }
+}

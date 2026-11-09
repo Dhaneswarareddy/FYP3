@@ -1,0 +1,37 @@
+{
+ "mode": "experimental",
+ "model_dir": "experimental_stain224_fp16",
+ "run": "EfficientNetV2B0__ce",
+ "precision": "fp16",
+ "model_sha256": "6226a0ab66316e707a378abc24196ddf4c8781adef4bb42e30d93e0b68dc9aa8",
+ "source_size": 256,
+ "input_size": 224,
+ "labels": [
+  "0",
+  "1+",
+  "2+",
+  "3+"
+ ],
+ "stain_calibration": {
+  "arm": "stain_p99",
+  "g_h": 0.2545270680571192,
+  "g_d": 0.5044797263953001,
+  "frozen": true,
+  "fitted_on": "HER2-IHC-40x development tiles (unlabelled) against BCI train",
+  "source_file": "next_experiment/outputs/harmonisation_params.json",
+  "source_sha256": "89a0a4872d2bfdbf1dc0f1f5270ee84fff8b69fc773eb447016c2405214a2f14"
+ },
+ "temperature": {
+  "T": 2.841661665067845,
+  "affects": "the reported confidence only, never the predicted class",
+  "fitted_on": "HER2-IHC-40x development tiles (R_cal)"
+ },
+ "intended_input": "HER2-IHC-40x tiles only",
+ "warnings": [
+  "Research software. Not clinically validated. Do not use for diagnosis or treatment decisions.",
+  "Scores individual tiles only. There is no slide-level or patient-level score.",
+  "Experimental. Gains were fitted for one external dataset. Other sites need their own unlabelled calibration, which this package does not provide.",
+  "Do not use on BCI tiles: the gains reduce BCI balanced accuracy from 0.875 to 0.407.",
+  "Weak on borderline scores: test recall 1+ 0.18, 2+ 0.57 with 2+ precision 0.09."
+ ]
+}

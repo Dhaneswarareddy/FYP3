@@ -1,0 +1,4 @@
+=== EfficientNetV2B0__ce__lowbatch  params=5,924,436  batch=8  input=224  class_weights=None ===
+  [head] ep   1 loss 1.0121 | val loss 0.9568 acc 0.5585 qwk 0.4702 f1 0.4513 | lr 1.00e-03 41s *
+  [finetune] ep   2 loss 0.8441 | val loss 0.7754 acc 0.6809 qwk 0.5238 f1 0.5737 | lr 5.01e-05 122s *
+DONE EfficientNetV2B0__ce__lowbatch: best epoch 2  val qwk 0.5316 acc 0.6891 f1 0.5810 | test qwk 0.5946 acc 0.7454  (2.7 min)

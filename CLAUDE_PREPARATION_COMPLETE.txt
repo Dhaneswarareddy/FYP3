@@ -1,0 +1,29 @@
+CLAUDE PREPARATION COMPLETE
+Status: complete, 30 Oct 2026. Experiment status: READY TO EXECUTE, no blockers.
+Antigravity may begin. The first go/no-go gate is the preflight stage in ANTIGRAVITY_HANDOFF.md.
+
+Handoff:
+  /Users/dhaneswarareddy/Downloads/FYP3/ANTIGRAVITY_HANDOFF.md
+
+Reports:
+  /Users/dhaneswarareddy/Downloads/FYP3/final_reports/experiment_audit.md
+  /Users/dhaneswarareddy/Downloads/FYP3/final_reports/cross_dataset_audit.md
+  /Users/dhaneswarareddy/Downloads/FYP3/final_reports/quantization_deployment.md
+  /Users/dhaneswarareddy/Downloads/FYP3/final_reports/final_fyp3_report.md
+  Figures, tables, audit scripts: /Users/dhaneswarareddy/Downloads/FYP3/final_reports/{figures,tables,scripts}/
+
+Experiment (HARMONISE-1, no training):
+  Scripts: /Users/dhaneswarareddy/Downloads/FYP3/next_experiment/run_harmonise.py, harmonise_lib.py
+  Checks:  /Users/dhaneswarareddy/Downloads/FYP3/next_experiment/smoke_build_panel.py, smoke_prepare_path.py
+  Config:  /Users/dhaneswarareddy/Downloads/FYP3/next_experiment/experiment_config.json
+  Dependencies: /Users/dhaneswarareddy/Downloads/FYP3/next_experiment/requirements.txt (nothing new to install)
+  Output folder, created by the run: /Users/dhaneswarareddy/Downloads/FYP3/next_experiment/outputs/
+
+Verified before writing this file:
+  All listed files exist. Run commands and dependencies are documented.
+  No training process was launched or is running. next_experiment/outputs/ does not exist yet.
+  81 protected result, split and deployment files are unchanged.
+  Only a 40-tile smoke test ran; its outputs in next_experiment/outputs_smoke/ are not results.
+
+Not done, not blocking: the full preflight (first step of the run), overfitting verdicts for the 4 newest runs,
+and any Raspberry Pi benchmark.

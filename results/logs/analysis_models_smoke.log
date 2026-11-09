@@ -1,0 +1,17 @@
+architectures: ['MobileNetV3Small', 'ConvNeXtTiny']
+frozen ImageNet probe FYP2: acc 0.860 f1 0.861 qwk 0.942
+frozen ImageNet probe BCI: acc 0.516 f1 0.513 qwk 0.444
+--- MobileNetV3Small
+  reload diff FYP2 1.19e-06 BCI 3.05e-06 | FYP2->BCI acc 0.323 BCI->FYP2 acc 0.350 | CKA last layer 0.717
+--- ConvNeXtTiny
+  reload diff FYP2 1.19e-07 BCI 1.70e-06 | FYP2->BCI acc 0.489 BCI->FYP2 acc 0.535 | CKA last layer 0.685
+/Users/dhaneswarareddy/Downloads/FYP3/src/analysis_models.py:490: UserWarning: Tight layout not applied. tight_layout cannot make Axes width small enough to accommodate all Axes decorations
+  axes[0].legend(loc="upper left", bbox_to_anchor=(0, -0.22), frameon=False, fontsize=8, ncol=2)
+                                         arch dataset  test_accuracy  test_macro_f1  test_qwk  silhouette  scatter_ratio  knn_accuracy  cross_domain_accuracy  cross_domain_qwk  cam_dab_ratio  cam_bg_ratio  shift_DAB_x1.5  shift_haematoxylin_x1.5  shift_all_stains_x1.5  shift_illumination_x0_85  reload_max_abs_diff
+frozen ImageNet EfficientNetB0 (linear probe)    FYP2          0.860          0.861     0.942       0.214          0.217           NaN                    NaN               NaN            NaN           NaN             NaN                      NaN                    NaN                       NaN                  NaN
+frozen ImageNet EfficientNetB0 (linear probe)     BCI          0.516          0.513     0.444      -0.000          0.069           NaN                    NaN               NaN            NaN           NaN             NaN                      NaN                    NaN                       NaN                  NaN
+                                 ConvNeXtTiny    FYP2          1.000          1.000     1.000       0.684          1.508         1.000                  0.489             0.477          1.141         0.683           0.052                    0.002                  0.011                    -0.000                  0.0
+                                 ConvNeXtTiny     BCI          0.892          0.891     0.858       0.144          0.205         0.871                  0.535             0.462          1.025         0.917           0.203                    0.176                  0.048                     0.071                  0.0
+                             MobileNetV3Small    FYP2          1.000          1.000     1.000       0.570          0.579         0.980                  0.323             0.370          1.049         0.902           0.090                    0.007                  0.093                    -0.005                  0.0
+                             MobileNetV3Small     BCI          0.855          0.857     0.843       0.149          0.205         0.887                  0.350             0.455          1.029         0.915           0.138                    0.087                  0.143                     0.195                  0.0
+rc=0

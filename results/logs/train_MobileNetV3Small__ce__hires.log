@@ -1,0 +1,29 @@
+WARNING:tensorflow:`input_shape` is undefined or non-square, or `rows` is not 224. Weights for input shape (224, 224) will be loaded as the default.
+=== MobileNetV3Small__ce__hires  params=941,428  batch=8  input=448  class_weights=None ===
+  [head] ep   1 loss 1.0288 | val loss 0.9343 acc 0.5722 qwk 0.4279 f1 0.4282 | lr 1.00e-03 61s *
+  [head] ep   2 loss 0.8619 | val loss 0.8671 acc 0.5942 qwk 0.4051 f1 0.4207 | lr 1.00e-03 55s
+  [head] ep   3 loss 0.7974 | val loss 0.8258 acc 0.6121 qwk 0.3682 f1 0.4220 | lr 1.00e-03 56s
+  [head] ep   4 loss 0.7545 | val loss 0.8158 acc 0.6479 qwk 0.4594 f1 0.5397 | lr 1.00e-03 57s *
+  [head] ep   5 loss 0.7310 | val loss 0.8180 acc 0.6272 qwk 0.4273 f1 0.5133 | lr 1.00e-03 61s
+  [finetune] ep   6 loss 0.6814 | val loss 0.7806 acc 0.6836 qwk 0.4360 f1 0.5514 | lr 5.01e-05 116s
+  [finetune] ep   7 loss 0.6236 | val loss 0.5947 acc 0.7648 qwk 0.5854 f1 0.6642 | lr 1.00e-04 106s *
+  [finetune] ep   8 loss 0.5340 | val loss 0.6247 acc 0.7524 qwk 0.5743 f1 0.6326 | lr 9.98e-05 107s
+  [finetune] ep   9 loss 0.4580 | val loss 0.4103 acc 0.8418 qwk 0.6931 f1 0.7742 | lr 9.93e-05 153s *
+  [finetune] ep  10 loss 0.4145 | val loss 0.4041 acc 0.8363 qwk 0.6563 f1 0.7820 | lr 9.85e-05 145s
+  [finetune] ep  11 loss 0.3797 | val loss 0.3946 acc 0.8569 qwk 0.7107 f1 0.7942 | lr 9.73e-05 125s *
+  [finetune] ep  12 loss 0.3454 | val loss 0.3679 acc 0.8638 qwk 0.6918 f1 0.8066 | lr 9.58e-05 118s
+  [finetune] ep  13 loss 0.3066 | val loss 0.4628 acc 0.8129 qwk 0.7010 f1 0.7732 | lr 9.40e-05 111s
+  [finetune] ep  14 loss 0.2897 | val loss 0.3200 acc 0.8748 qwk 0.7743 f1 0.8487 | lr 9.19e-05 108s *
+  [finetune] ep  15 loss 0.2652 | val loss 0.2968 acc 0.8982 qwk 0.8654 f1 0.8933 | lr 8.95e-05 122s *
+  [finetune] ep  16 loss 0.2391 | val loss 0.3660 acc 0.8556 qwk 0.7551 f1 0.8532 | lr 8.68e-05 138s
+  [finetune] ep  17 loss 0.2373 | val loss 0.4120 acc 0.8487 qwk 0.6663 f1 0.7928 | lr 8.39e-05 166s
+  [finetune] ep  18 loss 0.2116 | val loss 0.3278 acc 0.8858 qwk 0.7920 f1 0.8761 | lr 8.07e-05 161s
+  [finetune] ep  19 loss 0.2019 | val loss 0.3208 acc 0.8831 qwk 0.7782 f1 0.8464 | lr 7.73e-05 118s
+  [finetune] ep  20 loss 0.1930 | val loss 0.2947 acc 0.8900 qwk 0.8189 f1 0.8599 | lr 7.38e-05 94s
+  [finetune] ep  21 loss 0.2082 | val loss 0.2786 acc 0.8913 qwk 0.7977 f1 0.8605 | lr 7.01e-05 102s
+  [finetune] ep  22 loss 0.1626 | val loss 0.3205 acc 0.8927 qwk 0.8420 f1 0.8723 | lr 6.62e-05 100s
+  [finetune] ep  23 loss 0.1460 | val loss 0.2945 acc 0.9023 qwk 0.8196 f1 0.8922 | lr 6.23e-05 100s
+  [finetune] ep  24 loss 0.1433 | val loss 0.3036 acc 0.8900 qwk 0.8101 f1 0.8802 | lr 5.82e-05 108s
+  [finetune] ep  25 loss 0.1416 | val loss 0.3209 acc 0.8845 qwk 0.8243 f1 0.8871 | lr 5.41e-05 107s
+  early stop (no val QWK improvement for 10 epochs)
+DONE MobileNetV3Small__ce__hires: best epoch 15  val qwk 0.8654 acc 0.8982 f1 0.8933 | test qwk 0.8740 acc 0.9077  (45.0 min)

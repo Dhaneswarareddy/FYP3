@@ -1,0 +1,9 @@
+{
+ "n_dev": 8093,
+ "n_test": 1847,
+ "shared_names": 0,
+ "dev_all_named_train": true,
+ "test_all_named_test": true,
+ "dev_tiles_within_phash4_of_test": 0,
+ "go": true
+}

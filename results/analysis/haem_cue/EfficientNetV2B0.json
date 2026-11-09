@@ -1,0 +1,29 @@
+{
+ "arch": "EfficientNetV2B0",
+ "A": {
+  "scale": 0.2,
+  "n": 270,
+  "share_1plus_before": 0.0,
+  "share_1plus_after": 0.15555555555555556
+ },
+ "B": {
+  "scale": 5.0,
+  "n": 90,
+  "share_1plus_before": 0.9888888888888889,
+  "share_1plus_after": 0.022222222222222223
+ },
+ "C": {
+  "scale": 5.0,
+  "n": 758,
+  "share_1plus_before": 0.7796833773087071,
+  "share_1plus_after": 0.18337730870712401,
+  "balanced_accuracy_before": 0.32295173737438687,
+  "balanced_accuracy_after": 0.32581953332301117,
+  "predicted_share_after": [
+   305,
+   139,
+   284,
+   30
+  ]
+ }
+}

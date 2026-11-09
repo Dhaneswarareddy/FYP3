@@ -1,0 +1,4 @@
+=== MobileNetV3Small__ce__cw_ls  params=941,428  batch=32  input=224  class_weights=[5.041999816894531, 1.0470000505447388, 0.5649999976158142, 0.9290000200271606] ===
+  [head] ep   1 loss 1.3606 | val loss 1.1950 acc 0.4402 qwk 0.3536 f1 0.4066 | lr 1.00e-03 14s *
+  [finetune] ep   2 loss 1.1653 | val loss 1.1433 acc 0.4622 qwk 0.3932 f1 0.4327 | lr 5.05e-05 26s *
+DONE MobileNetV3Small__ce__cw_ls: best epoch 2  val qwk 0.3932 acc 0.4622 f1 0.4327 | test qwk 0.4732 acc 0.6055  (0.7 min)

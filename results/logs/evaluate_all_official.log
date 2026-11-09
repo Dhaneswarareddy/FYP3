@@ -1,0 +1,5 @@
+MobileNetV2__ce: train acc 0.9387  val 0.9265  test 0.9099
+MobileNetV3Small__ce: train acc 0.9444  val 0.8991  test 0.9017
+                 run  train_acc  val_acc  test_acc  gap_train_test_acc  val_minus_test_acc  nll_gap verdict verdict_noise_aware
+     MobileNetV2__ce     0.9387   0.9265    0.9099              0.0288              0.0166   0.0708    mild                mild
+MobileNetV3Small__ce     0.9444   0.8991    0.9017              0.0427             -0.0026   0.1024 overfit             overfit

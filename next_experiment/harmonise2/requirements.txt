@@ -1,0 +1,10 @@
+# No new dependencies: HARMONISE-2 uses the same environment as HARMONISE-1.
+# /Users/dhaneswarareddy/Downloads/Final_Year_Project/Codes/Project (Python 3.11)
+tensorflow-macos==2.15.0
+keras==2.15.0
+numpy==1.26.4
+pandas==3.0.6
+scikit-learn==1.9.1
+pillow==12.3.0
+opencv-python==4.9.0.80
+matplotlib==3.11.2

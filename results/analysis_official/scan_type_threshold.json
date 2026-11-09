@@ -1,0 +1,29 @@
+{
+  "otsu_threshold_train": 201.1396671167094,
+  "scan_counts": {
+    "test/bright": 448,
+    "test/grey": 528,
+    "test/no background": 1,
+    "train/bright": 1562,
+    "train/grey": 1744,
+    "train/no background": 5,
+    "val/bright": 265,
+    "val/grey": 320
+  },
+  "grey_share_by_class": {
+    "0": 0.25416666666666665,
+    "1": 0.44280762564991333,
+    "2": 0.5208041140719962,
+    "3": 0.679160419790105
+  },
+  "dabc_median_by_class_scan": {
+    "0/bright": 0.0868726531122871,
+    "0/grey": 0.0424967023306246,
+    "1/bright": 0.0917395086149304,
+    "1/grey": 0.1005953823685583,
+    "2/bright": 0.0943354297381735,
+    "2/grey": 0.1399472135396264,
+    "3/bright": 0.26138557613828545,
+    "3/grey": 0.290424870781624
+  }
+}

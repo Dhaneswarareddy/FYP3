@@ -1,0 +1,31 @@
+=== EfficientNetV2B0__ce__mix_fyp2  params=5,924,436  batch=32  input=224  class_weights=None ===
+  [head] ep   1 loss 0.9734 | val loss 0.9708 acc 0.5612 qwk 0.3412 f1 0.3468 | lr 1.00e-03 50s *
+  [head] ep   2 loss 0.8031 | val loss 0.9241 acc 0.6094 qwk 0.5079 f1 0.4988 | lr 1.00e-03 39s *
+  [head] ep   3 loss 0.7474 | val loss 0.8821 acc 0.6382 qwk 0.4968 f1 0.5300 | lr 1.00e-03 43s
+  [head] ep   4 loss 0.7116 | val loss 0.8773 acc 0.6479 qwk 0.5318 f1 0.5276 | lr 1.00e-03 45s *
+  [head] ep   5 loss 0.6919 | val loss 0.8618 acc 0.6547 qwk 0.5396 f1 0.5538 | lr 1.00e-03 42s *
+  [finetune] ep   6 loss 0.6150 | val loss 0.8295 acc 0.6437 qwk 0.5739 f1 0.5756 | lr 5.03e-05 156s *
+  [finetune] ep   7 loss 0.5010 | val loss 0.7770 acc 0.6644 qwk 0.6281 f1 0.6119 | lr 1.00e-04 133s *
+  [finetune] ep   8 loss 0.3966 | val loss 0.5655 acc 0.7730 qwk 0.6478 f1 0.7264 | lr 9.96e-05 141s *
+  [finetune] ep   9 loss 0.3213 | val loss 0.6405 acc 0.7414 qwk 0.6926 f1 0.7074 | lr 9.83e-05 142s *
+  [finetune] ep  10 loss 0.3017 | val loss 0.4508 acc 0.7964 qwk 0.6876 f1 0.7713 | lr 9.62e-05 152s
+  [finetune] ep  11 loss 0.2504 | val loss 0.4442 acc 0.8226 qwk 0.6749 f1 0.7907 | lr 9.33e-05 132s
+  [finetune] ep  12 loss 0.2126 | val loss 0.4441 acc 0.8281 qwk 0.7146 f1 0.8047 | lr 8.97e-05 131s *
+  [finetune] ep  13 loss 0.2153 | val loss 0.4657 acc 0.8239 qwk 0.6591 f1 0.7860 | lr 8.54e-05 138s
+  [finetune] ep  14 loss 0.1788 | val loss 0.4255 acc 0.8349 qwk 0.7140 f1 0.8129 | lr 8.04e-05 129s
+  [finetune] ep  15 loss 0.1606 | val loss 0.4330 acc 0.8308 qwk 0.6876 f1 0.8082 | lr 7.50e-05 128s
+  [finetune] ep  16 loss 0.1493 | val loss 0.3703 acc 0.8528 qwk 0.8008 f1 0.8414 | lr 6.91e-05 132s *
+  [finetune] ep  17 loss 0.1564 | val loss 0.4203 acc 0.8487 qwk 0.7805 f1 0.8395 | lr 6.29e-05 130s
+  [finetune] ep  18 loss 0.1104 | val loss 0.3194 acc 0.8845 qwk 0.8466 f1 0.8788 | lr 5.65e-05 132s *
+  [finetune] ep  19 loss 0.1053 | val loss 0.3848 acc 0.8638 qwk 0.8138 f1 0.8552 | lr 5.00e-05 131s
+  [finetune] ep  20 loss 0.0906 | val loss 0.3183 acc 0.8886 qwk 0.8446 f1 0.8880 | lr 4.35e-05 143s
+  [finetune] ep  21 loss 0.0803 | val loss 0.3254 acc 0.8803 qwk 0.8216 f1 0.8668 | lr 3.71e-05 130s
+  [finetune] ep  22 loss 0.0723 | val loss 0.3820 acc 0.8707 qwk 0.8197 f1 0.8653 | lr 3.09e-05 134s
+  [finetune] ep  23 loss 0.0664 | val loss 0.3215 acc 0.8886 qwk 0.8348 f1 0.8862 | lr 2.50e-05 137s
+  [finetune] ep  24 loss 0.0552 | val loss 0.3298 acc 0.8982 qwk 0.8416 f1 0.8901 | lr 1.96e-05 150s
+  [finetune] ep  25 loss 0.0480 | val loss 0.3861 acc 0.8790 qwk 0.7979 f1 0.8763 | lr 1.46e-05 132s
+  [finetune] ep  26 loss 0.0476 | val loss 0.3342 acc 0.9037 qwk 0.8445 f1 0.9011 | lr 1.03e-05 132s
+  [finetune] ep  27 loss 0.0445 | val loss 0.3407 acc 0.8886 qwk 0.8287 f1 0.8919 | lr 6.70e-06 131s
+  [finetune] ep  28 loss 0.0366 | val loss 0.3477 acc 0.8913 qwk 0.8339 f1 0.8883 | lr 3.81e-06 132s
+  early stop (no val QWK improvement for 10 epochs)
+DONE EfficientNetV2B0__ce__mix_fyp2: best epoch 18  val qwk 0.8466 acc 0.8845 f1 0.8788 | test qwk 0.9099 acc 0.9169  (55.9 min)

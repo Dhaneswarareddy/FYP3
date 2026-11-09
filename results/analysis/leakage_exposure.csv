@@ -1,0 +1,13 @@
+run,split,exposure,n,accuracy,macro_f1
+MobileNetV2__ce,val,seen fragment,347,0.9481268011527377,0.9563006679839325
+MobileNetV2__ce,val,unseen fragment,29,0.8275862068965517,0.8578674948240165
+MobileNetV2__ce,val,unlinked,209,0.9043062200956937,0.9041978981732983
+MobileNetV2__ce,test,seen fragment,603,0.9419568822553898,0.9221209711968129
+MobileNetV2__ce,test,unseen fragment,48,0.7708333333333334,0.7504823004823005
+MobileNetV2__ce,test,unlinked,326,0.8711656441717791,0.8535001673489354
+MobileNetV3Small__ce,val,seen fragment,347,0.9135446685878963,0.8772669708195916
+MobileNetV3Small__ce,val,unseen fragment,29,0.7931034482758621,0.5580952380952381
+MobileNetV3Small__ce,val,unlinked,209,0.8899521531100478,0.8817182362264329
+MobileNetV3Small__ce,test,seen fragment,603,0.9386401326699834,0.933255146302145
+MobileNetV3Small__ce,test,unseen fragment,48,0.8125,0.8027141427141427
+MobileNetV3Small__ce,test,unlinked,326,0.8466257668711656,0.8257428850120878
