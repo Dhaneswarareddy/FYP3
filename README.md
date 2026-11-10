@@ -35,8 +35,9 @@ semester's work (Steps 1–14) and next semester's (Steps 15 onward).
 - **Edge (measured 10 Nov 2026).** Android app v1.1 (preprocessing bit-exact with training) reproduces the validated
   predictions on 758/758 BCI test tiles on both a Samsung Galaxy M35 5G and a Realme 6 (accuracy 0.975). Median network
   latency per 448 px tile (FP16): 81.4 ms (Samsung, 4 threads), 139.1 ms (Realme, 8 threads), 336.5 ms (Raspberry Pi 4B,
-  4 threads). INT8 is 3–4× faster but fails the accuracy gate (agreement 0.928) and is for speed tests only. No power was
-  measured; phone temperatures are battery temperatures.
+  4 threads). INT8 is 3–4× faster but fails the accuracy gate (agreement 0.928) and is for speed tests only. Phone power
+  (battery fuel gauge, measured afterwards; `experiments_v2/10_power/`): inference adds about 4 W at 4 threads, 0.39 J
+  (Samsung) and 0.61 J (Realme) per tile above idle; Pi power not measured. Phone temperatures are battery temperatures.
 
 ## Pipeline
 

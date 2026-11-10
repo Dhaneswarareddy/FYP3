@@ -2,3 +2,5 @@
   [head] ep   1 loss 0.9957 | val loss 0.9069 acc 0.5928 qwk 0.3512 f1 0.3827 | lr 1.00e-03 272s *
   [head] ep   2 loss 0.8160 | val loss 0.8065 acc 0.6644 qwk 0.4408 f1 0.5288 | lr 1.00e-03 267s *
   [head] ep   3 loss 0.7642 | val loss 0.8031 acc 0.6534 qwk 0.4300 f1 0.5100 | lr 1.00e-03 300s
+  [head] ep   4 loss 0.7154 | val loss 0.7478 acc 0.7111 qwk 0.5356 f1 0.6044 | lr 1.00e-03 305s *
+  [head] ep   5 loss 0.6869 | val loss 0.7525 acc 0.6781 qwk 0.4863 f1 0.5668 | lr 1.00e-03 322s
