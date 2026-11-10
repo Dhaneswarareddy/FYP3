@@ -1,5 +1,8 @@
 # HARMONISE-2 Reliability Execution Report
 
+> **Correction (10 Nov 2026).** The DAB-dimming mechanism originally given in §1 item 4 and §6.2 is contradicted by this experiment's own dose-response data (`outputs/D_external_EfficientNetV2B0__ce__hires.csv`): DAB gain alone leaves 3+ recall at 0.852, haematoxylin gain alone drops it to 0.266. The text below has been corrected; see `experiments_v2/REPORT_CORRECTIONS_v2.md` item 3.
+
+
 **Date**: October 30, 2026  
 **Execution Agent**: Antigravity Autonomous Workflow  
 **Environment**: MacBook Air M1 (Apple Silicon), Python 3.11.16, TensorFlow 2.15.0  
@@ -21,7 +24,7 @@ The HARMONISE-2 reliability suite was executed sequentially to rigorously evalua
    - Models struggle severely on the borderline classes (1+ and 2+).
    - In `MobileNetV3Small__ce` and `DenseNet121__ce`, the high QWK is driven almost entirely by polar separation (0 vs 3+), while 1+ and 2+ recall remain below $0.14$ and $0.04$, respectively.
    - In `EfficientNetV2B0__ce`, 2+ recall recovers to $0.668$, but at low precision ($0.107$) due to false-positive intrusion from 0 and 1+.
-4. **Resolution Compatibility Mechanism (Exp D)**: Optical density gain estimation at 256px ($g_h=0.258, g_d=0.485$) and 448px ($g_h=0.255, g_d=0.492$) is virtually identical, confirming that stain shift is a true pixel-level optical density domain shift rather than a tiling artefact. However, 448px networks rely on membrane boundary contrast; suppressing DAB optical density dims faint membrane signals below the detection threshold, dropping 3+ recall ($0.849 \to 0.307$). Applying scale compensation (`scale2`) restores 3+ recall to $0.701$ and lifts balanced accuracy to $0.322$.
+4. **Resolution Compatibility Mechanism (Exp D)**: Optical density gain estimation at 256px ($g_h=0.258, g_d=0.485$) and 448px ($g_h=0.255, g_d=0.492$) is virtually identical, confirming that stain shift is a true pixel-level optical density domain shift rather than a tiling artefact. However, the 448 px network collapses under the calibration (3+ recall $0.849 \to 0.307$). The dose-response shows this follows the **haematoxylin** gain (H only: 3+ recall 0.266; DAB only: 0.852). Scale compensation (`scale2`) lifts development balanced accuracy to $0.322$ (+0.043 over no calibration) but 3+ recall still falls to $0.701$ (−0.148), so it **fails** the pre-set acceptance rule.
 5. **Confidence & Selective Review (Exp E)**: Stain calibration cuts external Expected Calibration Error (ECE) from $>0.55$ to $0.19$–$0.26$, and temperature scaling ($T \approx 2.8$) further aligns confidence to an ECE of $0.100$. However, confidence-based review flagging is **not clinically usable** because low confidence heavily clusters on genuine 2+ cases, discarding up to $75.8\%$–$93.9\%$ of HER2 equivocal cases.
 
 ---
@@ -131,8 +134,8 @@ Using the exact fit tiles from HARMONISE-1:
 
 ### 6.2 Why Hires 448px Fails Under Standard Calibration
 The hires model was trained on unscaled $512 \to 448$ crops and learned high-frequency membrane continuity features.
-- When $g_d = 0.50$ is applied, DAB optical density is halved across the board. In 448px tiles, faint membrane borders drop below the model's activation threshold, driving 3+ recall down from $0.849$ to $0.307$.
-- When scale compensation (`scale2`) is applied, balanced accuracy increases to $0.322$ and 3+ recall is maintained at $0.701$.
+- With both gains, 3+ recall drops from $0.849$ to $0.307$. Applying each gain alone shows the cause: **haematoxylin gain only ($g_h = 0.25$) gives 0.266; DAB gain only ($g_d = 0.50$) gives 0.852**. The collapse follows the haematoxylin gain, not DAB dimming (why haematoxylin matters more at 448 px was not tested).
+- With scale compensation (`scale2`), balanced accuracy is $0.322$, but 3+ recall falls to $0.701$ (−0.148 vs no calibration), which fails the acceptance rule (drop > 0.10).
 
 | Model & Arm | Scale | $g_h$ | $g_d$ | BalAcc | $\Delta$ BalAcc vs None | Rec 3+ | Meets Rule? |
 |---|---|---|---|---|---|---|---|

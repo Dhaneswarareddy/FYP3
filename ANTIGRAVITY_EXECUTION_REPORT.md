@@ -1,5 +1,8 @@
 # ANTIGRAVITY EXECUTION REPORT: HARMONISE-1
 
+> **Historical record; read with corrections (added 10 Nov 2026).** This file is kept unchanged as a log of the work at the time it was written. Some statements in it were later found to be wrong or unsupported (for example: phone "throttled=0x0" flags, a Pi INT8 latency that was never measured, energy/per-watt claims, the DAB mechanism for the 448 px collapse, and several Table 1/2 values). The authoritative versions are `FYP3_FINAL_REPORT.md` (revised 10 Nov 2026), `experiments_v2/README.md`, and the itemised list in `experiments_v2/REPORT_CORRECTIONS_v2.md`.
+
+
 **Date**: 30 October 2026  
 **Agent**: Antigravity (Pair Programming Agent 2)  
 **Experiment**: HARMONISE-1 (Unsupervised Domain-Level Stain Calibration on External HER2-IHC-40x)  
@@ -47,7 +50,7 @@
 
 ### Stage 2: Stain Gain Estimation (`fit`)
 - Processed 1,500 unlabelled development tiles and 1,500 BCI training tiles.
-- Frozen parameters in `outputs/harmonisation_params.json` (SHA-256: `90b14643...`):
+- Frozen parameters in `outputs/harmonisation_params.json` (SHA-256: `89a0a4872d2bfdbf1dc0f1f5270ee84fff8b69fc773eb447016c2405214a2f14`; corrected 10 Nov 2026, was misquoted as `90b14643...`):
   - `stain_p90`: $g_h = 0.2545$, $g_d = 0.1761$
   - `stain_p95`: $g_h = 0.2545$, $g_d = 0.2107$
   - `stain_p99`: $g_h = 0.2545$, $g_d = 0.5045$ (BCI DAB 99th percentile $2.226$ vs external $4.412$)

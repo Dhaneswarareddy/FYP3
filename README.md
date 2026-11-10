@@ -3,7 +3,36 @@
 This is a separate experiment. **FYP2 is the main project and is not modified.** FYP3 reads FYP2's split, images,
 weights and results, and writes only inside `FYP3/`. The BCI raw data (`FYP/data/raw/BCI_dataset`) is read only.
 
-**Scope:** training, evaluation, comparison with FYP2, feature analysis and performance diagnosis. No quantisation or deployment.
+**Scope:** training, evaluation, comparison with FYP2, feature analysis and performance diagnosis (the pipeline below),
+then external evaluation on HER2-IHC-40x with stain calibration (HARMONISE), the extended evaluation in `experiments_v2/`,
+and deployment of the primary model to Android phones and a Raspberry Pi 4B (`deployment/`, `android_app/`).
+The current write-up is `FYP3_FINAL_REPORT.md` (revised 10 Nov 2026); every correction to earlier versions is listed in
+`experiments_v2/REPORT_CORRECTIONS_v2.md`.
+
+## Key findings (from `FYP3_FINAL_REPORT.md`)
+
+- **In-domain (BCI, grouped split).** Validation accuracy of the baselines is 85.4%–90.8%. 448 px input is a confirmed
+  improvement for EfficientNetV2B0 against a batch-matched 224 px control (Δ val QWK +0.105 [0.056, 0.168], Δ test QWK
+  +0.063 [0.026, 0.116]); it was not confirmed for MobileNetV3Small. Primary model `EfficientNetV2B0__ce__hires`: val
+  acc 0.950, QWK 0.935; test acc 0.975, QWK 0.959. FYP2 synthetic pretraining or mixing gave no measurable change.
+- **External (HER2-IHC-40x, University of Malaya, Data in Brief 2025).** The test split (1,847 tiles) was examined in
+  earlier diagnostics, so external results are exploratory. Zero-shot, the BCI networks collapse (accuracy 0.419–0.586,
+  balanced accuracy 0.260–0.381; 43%–94% of tiles predicted 3+). HARMONISE (two optical-density gains fitted on
+  unlabelled development tiles against BCI training tiles) raises 224 px EfficientNetV2B0 balanced accuracy from 0.301
+  to 0.503, but sends 61% of negatives to 2+ and breaks the 448 px model (0.186; the development-tile dose-response points
+  to the haematoxylin gain). FYP2's synthetic-trained networks score better here (0.61–0.73), explained by the external
+  set's per-class colour selection.
+- **Extended evaluation (`experiments_v2/`).** The 448 px model has the lowest clinical workflow cost on BCI test (0.12
+  vs 0.31 for 224 px) and supports referral (93.7% coverage: accuracy 0.975 → 0.989), but is defocus-sensitive (blur
+  σ = 0.9 µm costs 0.17 balanced accuracy vs 0.03 at 224 px). Grad-CAM suggests correct external 1+ calls attend to
+  glass and pale areas. AdaBN reaches about 0.52 external balanced accuracy and rescues the 448 px model (0.516);
+  fine-tuning on 5 labelled tiles per class reaches 0.782 ± 0.053. A frozen ImageNet backbone costs about 19 accuracy
+  points.
+- **Edge (measured 10 Nov 2026).** Android app v1.1 (preprocessing bit-exact with training) reproduces the validated
+  predictions on 758/758 BCI test tiles on both a Samsung Galaxy M35 5G and a Realme 6 (accuracy 0.975). Median network
+  latency per 448 px tile (FP16): 81.4 ms (Samsung, 4 threads), 139.1 ms (Realme, 8 threads), 336.5 ms (Raspberry Pi 4B,
+  4 threads). INT8 is 3–4× faster but fails the accuracy gate (agreement 0.928) and is for speed tests only. No power was
+  measured; phone temperatures are battery temperatures.
 
 ## Pipeline
 
@@ -40,7 +69,8 @@ their separate accuracies.
   - preprocessing, augmentation, two-stage schedule, early stopping, seed
   - CE and CORN losses, metrics, overfitting rules
 - **Different, forced by the data:**
-  - IHC tiles are 1024 px and are downsampled once to 256 px.
+  - IHC tiles are 1024 px and are downsampled once to 256 px. (The 448 px `hires` variant instead uses 1024 → Lanczos
+    512 → bilinear 448.)
   - Labels are slide-level, taken from BCI file names.
   - BCI's official split leaks: 63% of test tiles are edge-connected to training tiles. The main split therefore re-applies FYP2's
     grouped 70/15/15 recipe, with *slide fragments* as groups instead of pHash twins.
@@ -49,5 +79,7 @@ their separate accuracies.
   - CORN is trained only for the best CE model per tier.
   - The improvement variants (`variants.py`) run on a few models, chosen from the diagnosis.
 
-See `DATASET.md` for the data and `results/REPORT.md` for results. Rebuilding on another machine: `FYP3_REPRODUCTION_GUIDE.md`.
-Planned follow-up experiments (manual): `NEXT_EXPERIMENTS.md`; proposed report wording fixes: `REPORT_CORRECTIONS.md`.
+See `DATASET.md` for the data and `FYP3_FINAL_REPORT.md` for results. `results/REPORT.md`, `results/selection.json`,
+`results/metrics_all.csv` and `results/overfitting.csv` predate experiments E1–E5 and are stale. Rebuilding on another machine:
+`FYP3_REPRODUCTION_GUIDE.md`. Planned follow-up experiments (manual): `NEXT_EXPERIMENTS.md` (E6 and E7 were not run).
+Report corrections: `experiments_v2/REPORT_CORRECTIONS_v2.md` (current; supersedes the earlier `REPORT_CORRECTIONS.md`).

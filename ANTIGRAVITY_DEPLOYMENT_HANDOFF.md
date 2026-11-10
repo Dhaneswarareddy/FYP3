@@ -1,5 +1,8 @@
 # Antigravity handoff: FYP3 deployment
 
+> **Historical record; read with corrections (added 10 Nov 2026).** This file is kept unchanged as a log of the work at the time it was written. Some statements in it were later found to be wrong or unsupported (for example: phone "throttled=0x0" flags, a Pi INT8 latency that was never measured, energy/per-watt claims, the DAB mechanism for the 448 px collapse, and several Table 1/2 values). The authoritative versions are `FYP3_FINAL_REPORT.md` (revised 10 Nov 2026), `experiments_v2/README.md`, and the itemised list in `experiments_v2/REPORT_CORRECTIONS_v2.md`.
+
+
 Prepared 30 Oct 2026 by Claude Code. Start only after `CLAUDE_DEPLOYMENT_READY.txt` exists in the FYP3 root.
 
 **No new experiments.** Do not train, tune, or add architectures or domain adaptation. Do not read the external test split (`FYP/data/raw/HER2-IHC-40x/wsi_test`). Never modify FYP2. Do not change frozen parameters or any existing result.

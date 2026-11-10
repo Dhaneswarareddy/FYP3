@@ -1,5 +1,8 @@
 # Proposed corrections to `results/REPORT.md` (30 Oct 2026 version)
 
+> **Superseded (note added 10 Nov 2026)** by `experiments_v2/REPORT_CORRECTIONS_v2.md`, which re-checks every claim against the stored artifacts, and by the revised `FYP3_FINAL_REPORT.md`.
+
+
 The report is unchanged. These are proposals from the 30 Oct audit. To apply them, edit `results/findings.md` (§0)
 and the limitation strings in `src/report.py`, then regenerate (see `NEXT_EXPERIMENTS.md`, "After the experiments").
 

@@ -1,5 +1,8 @@
 # FYP3 Final Scientific and Experimental Audit
 
+> **Read with corrections (added 10 Nov 2026).** This audit (30 Oct–9 Nov) repeated several claims later shown to be wrong: phone `0x0` throttle flags (Android has no such flag; temperatures were battery readings), the INT8 latencies presented as deployment results (INT8 failed the accuracy gate), the "pinned to A78 cores" and "sync stall" explanations (no affinity was set), the DAB mechanism for the 448 px collapse, and "74% to 79%" referral at a coverage that was never measured. See `experiments_v2/REPORT_CORRECTIONS_v2.md` and the revised `FYP3_FINAL_REPORT.md`.
+
+
 **Audit Date**: October 31, 2026  
 **Auditor**: Antigravity Autonomous Workflow  
 **Project Root**: `/Users/dhaneswarareddy/Downloads/FYP3`  

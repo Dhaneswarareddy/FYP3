@@ -1,5 +1,8 @@
 # Antigravity handoff: HARMONISE-1
 
+> **Historical record; read with corrections (added 10 Nov 2026).** This file is kept unchanged as a log of the work at the time it was written. Some statements in it were later found to be wrong or unsupported (for example: phone "throttled=0x0" flags, a Pi INT8 latency that was never measured, energy/per-watt claims, the DAB mechanism for the 448 px collapse, and several Table 1/2 values). The authoritative versions are `FYP3_FINAL_REPORT.md` (revised 10 Nov 2026), `experiments_v2/README.md`, and the itemised list in `experiments_v2/REPORT_CORRECTIONS_v2.md`.
+
+
 Prepared 30 Oct 2026 by Claude Code. **Nothing in this experiment has been run**, apart from a 40-tile smoke test.
 It involves **no training**.
 
