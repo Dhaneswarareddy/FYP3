@@ -9,6 +9,10 @@ and deployment of the primary model to Android phones and a Raspberry Pi 4B (`de
 The current write-up is `FYP3_FINAL_REPORT.md` (revised 10 Nov 2026); every correction to earlier versions is listed in
 `experiments_v2/REPORT_CORRECTIONS_v2.md`.
 
+**Start here:** `PROJECT_STATUS_AND_ROADMAP.md` lists every experiment in pipeline order (data → training → evaluation →
+other laboratories → deployment), with results, evidence locations, a must-disclose list, and the split into this
+semester's work (Steps 1–14) and next semester's (Steps 15 onward).
+
 ## Key findings (from `FYP3_FINAL_REPORT.md`)
 
 - **In-domain (BCI, grouped split).** Validation accuracy of the baselines is 85.4%–90.8%. 448 px input is a confirmed
@@ -81,5 +85,6 @@ their separate accuracies.
 
 See `DATASET.md` for the data and `FYP3_FINAL_REPORT.md` for results. `results/REPORT.md`, `results/selection.json`,
 `results/metrics_all.csv` and `results/overfitting.csv` predate experiments E1–E5 and are stale. Rebuilding on another machine:
-`FYP3_REPRODUCTION_GUIDE.md`. Planned follow-up experiments (manual): `NEXT_EXPERIMENTS.md` (E6 and E7 were not run).
+`FYP3_REPRODUCTION_GUIDE.md`. Planned follow-up experiments (manual): `NEXT_EXPERIMENTS.md`. E6 and E7 were started on 10 Nov 2026 in
+`experiments_v2/09_resolution_e6_e7/` (next-semester work; see `PROJECT_STATUS_AND_ROADMAP.md` §4).
 Report corrections: `experiments_v2/REPORT_CORRECTIONS_v2.md` (current; supersedes the earlier `REPORT_CORRECTIONS.md`).

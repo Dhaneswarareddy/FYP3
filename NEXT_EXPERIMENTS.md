@@ -66,6 +66,10 @@ CI of Δ val QWK excludes 0.
 
 E6 and E7 run only if E1 shows a resolution effect.
 
+**Status (10 Nov 2026).** E1 confirmed a resolution effect for EfficientNetV2B0, so the condition is met. E6 and E7
+were started on 10 Nov 2026 with the unchanged training code, isolated in `experiments_v2/09_resolution_e6_e7/`
+(`run_e6e7.sh`; runs in `runs/`, logs in `logs/`). Results are reported there when the runs finish.
+
 ## 3. Exact commands
 
 ### E1 (run this first)
