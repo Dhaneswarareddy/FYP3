@@ -86,6 +86,6 @@ their separate accuracies.
 
 See `DATASET.md` for the data and `FYP3_FINAL_REPORT.md` for results. `results/REPORT.md`, `results/selection.json`,
 `results/metrics_all.csv` and `results/overfitting.csv` predate experiments E1–E5 and are stale. Rebuilding on another machine:
-`FYP3_REPRODUCTION_GUIDE.md`. Planned follow-up experiments (manual): `NEXT_EXPERIMENTS.md`. E6 and E7 were started on 10 Nov 2026 in
-`experiments_v2/09_resolution_e6_e7/` (next-semester work; see `PROJECT_STATUS_AND_ROADMAP.md` §4).
+`FYP3_REPRODUCTION_GUIDE.md`. Planned follow-up experiments (manual): `NEXT_EXPERIMENTS.md`. E6 and E7 were run on 10–11 Nov 2026 in
+`experiments_v2/09_resolution_e6_e7/` (next-semester work; neither met its pre-registered rule; see `PROJECT_STATUS_AND_ROADMAP.md` §4).
 Report corrections: `experiments_v2/REPORT_CORRECTIONS_v2.md` (current; supersedes the earlier `REPORT_CORRECTIONS.md`).
